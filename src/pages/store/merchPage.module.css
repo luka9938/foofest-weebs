@@ -1,0 +1,39 @@
+.merchContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: black; /* Set the background color to black */
+  padding: 20px; /* Add some padding to create space around the grid */
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px; /* Add rounded corners to the grid items */
+}
+
+.button {
+  background-color: #ff4545; /* Update the button background color to a rock festival style */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e43c3c; /* Update the hover background color */
+}
+
+.button:active {
+  background-color: #d03737; /* Update the active background color */
+}
