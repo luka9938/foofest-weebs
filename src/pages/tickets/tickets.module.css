@@ -1,0 +1,31 @@
+.h1 {
+  font-size: 7.594rem;
+  line-height: 8rem;
+}
+
+.h2 {
+  font-size: 3.157rem;
+}
+
+.ticket_container {
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  gap: 1rem;
+  justify-content: center;
+  margin-left: 2.5%;
+  gap: 10vw;
+}
+
+.article {
+  display: flex;
+  border: 2px solid blue;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.a {
+  padding: 1rem 2rem;
+  border: 2px solid blue;
+}
