@@ -1,0 +1,47 @@
+.merchContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: black;
+  padding: 20px;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+  border: 1px solid red;
+  padding: 20px;
+  border-radius: 20px;
+  color: red;
+}
+.gridItem img {
+  margin-bottom: 10px; /* Add margin to create space below the image */
+}
+
+.button {
+  background-color: black;
+  color: red;
+  border: 1px solid red;
+  border-radius: 20px;
+  /* border: none; */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: red;
+  color: #000000;
+}
+
+.button:active {
+  background-color: #d03737;
+}
