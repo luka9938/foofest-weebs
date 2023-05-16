@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .icon {
@@ -52,14 +53,14 @@
   color: #666;
 }
 
-/* .icon-location {
-  background-image: url("/icons/location.png");
+.map-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
 }
 
-.icon-date {
-  background-image: url("/icons/date.png");
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
 }
-
-.icon-time {
-  background-image: url("");
-} */
