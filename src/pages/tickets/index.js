@@ -17,7 +17,7 @@ export default function Tickets() {
                 "live hard cum fast"
               </li>
             </ul>
-            <h3 className={styles.h1}>799,-</h3>
+            <h3 className={styles.h3}>799,-</h3>
             <a className={styles.a} href="#">
               KØB NU
             </a>
@@ -36,7 +36,7 @@ export default function Tickets() {
               <li>- Chillout-område</li>
               <li>- Hemmelig merchandisebutik med en stærkt begrænset vare.</li>
             </ul>
-            <h3 className={styles.h1}>1299,-</h3>
+            <h3 className={styles.h3}>1299,-</h3>
             <a className={styles.a} href="#">
               KØB NU
             </a>

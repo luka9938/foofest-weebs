@@ -9,12 +9,16 @@
   font-weight: bold;
 }
 
+.h3 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
 .ticket_container {
   display: grid;
   grid-template-columns: repeat(2, 30vw);
-  gap: 1rem;
   justify-content: center;
-  margin-left: 2.5%;
+  margin: 0 2.5% 2.5% 2.5%;
   gap: 10vw;
 }
 
