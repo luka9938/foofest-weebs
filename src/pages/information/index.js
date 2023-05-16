@@ -53,7 +53,7 @@ const PracticalPage = ({ google }) => {
               }`}
               onClick={handleLocationClick}
             >
-              Location: Your Festival Location
+              Location: Steffens lejlighed
               {isLocationOpen ? (
                 <button>Hide Map</button>
               ) : (
@@ -76,6 +76,17 @@ const PracticalPage = ({ google }) => {
                         }}
                       />
                     </Map>
+                  </div>
+                  <div className={styles.buttonContainer}>
+                    {isLocationOpen ? (
+                      <button
+                        className={`${styles.button} ${styles.hideButton}`}
+                      >
+                        Hide Map
+                      </button>
+                    ) : (
+                      <button className={styles.button}>Show Map</button>
+                    )}
                   </div>
                 </div>
               )}
