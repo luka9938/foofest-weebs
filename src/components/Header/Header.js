@@ -1,11 +1,22 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
+import { useState } from "react";
 
 export function Header() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.navbar}>
       <div className={`${styles.container} ${styles.nav_container}`}>
-        <input className={styles.checkbox} type="checkbox" name="" id="" />
+        <input className={styles.checkbox} type="checkbox" name="" id="" checked={isMenuOpen} onChange={toggleMenu} />
         <div className={styles.hamburger_lines}>
           <span className={`${styles.line} ${styles.line1}`}></span>
           <span className={`${styles.line} ${styles.line2}`}></span>
@@ -18,37 +29,37 @@ export function Header() {
         </div>
         <div className={styles.menu_items}>
           <li>
-            <Link href="/" aria-label="Logo">
+            <Link href="/" onClick={closeMenu} aria-label="Logo">
               LOGO
             </Link>
           </li>
           <li>
-            <Link href="/" aria-label="Lineup">
+            <Link href="/lineup" onClick={closeMenu} aria-label="Lineup">
               LINEUP
             </Link>
           </li>
           <li>
-            <Link href="/" aria-label="Tickets">
+            <Link href="/tickets" onClick={closeMenu} aria-label="Tickets">
               TICKETS
             </Link>
           </li>
           <li>
-            <Link href="/" aria-label="News">
+            <Link href="/news" onClick={closeMenu} aria-label="News">
               NEWS
             </Link>
           </li>
           <li>
-            <Link href="/" aria-label="Info">
+            <Link href="/information" onClick={closeMenu} aria-label="Info">
               INFO
             </Link>
           </li>
           <li>
-            <Link href="/" aria-label="Merch">
+            <Link href="/store" onClick={closeMenu} aria-label="Merch">
               MERCH
             </Link>
           </li>
           <li>
-            <Link href="/" aria-label="Gallery">
+            <Link href="/gallery" onClick={closeMenu} aria-label="Gallery">
               GALLERY
             </Link>
           </li>
