@@ -7,25 +7,25 @@ const tshirts = [
     id: 1,
     image: "/purple.png",
     name: "FOOFEST 2023 - PURPLE AND YELLOW",
-    price: "749 kr.",
+    price: "749 ,-",
   },
   {
     id: 2,
     image: "/Foofest_black_and_red.png",
     name: "FOOFEST 2023 - BLACK AND RED",
-    price: "749 kr.",
+    price: "749 ,-",
   },
   {
     id: 3,
     image: "/Foofest_white_and_red_skull.png",
     name: "FOOFEST 2023 - LIMITED SKULL",
-    price: "999 kr.",
+    price: "999 ,-",
   },
   {
     id: 4,
     image: "/Foofest_green_and_orange.png",
     name: "FOOFEST 2023 - GREEN AND ORANGE",
-    price: "749 kr.",
+    price: "749 ,-",
   },
 ];
 
