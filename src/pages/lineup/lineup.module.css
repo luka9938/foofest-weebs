@@ -75,9 +75,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
-  height: 90vh;
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 1250px;
   background: white;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -101,16 +99,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .popupimage {
   width: 300px;
   height: 300px;
-  background-image: url();
+  background-color: #00ff88;
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
@@ -123,4 +121,5 @@
 .popupdescription {
   font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 0.5rem;
 }

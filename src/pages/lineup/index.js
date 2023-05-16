@@ -138,10 +138,25 @@ export default function Home() {
           <button className={styles.closeButton} onClick={closePopup}>
             Close
           </button>
-          <div className={styles.popupContent}>
-            <div className={styles.popupImage}></div>
-            <h2 className={styles.popupTitle}>Popup Title</h2>
-            <p className={styles.popupDescription}>Popup description goes here.</p>
+          <div className={styles.popupcontent}>
+            <div className={styles.popupimage}></div>
+            <h2 className={styles.popuptitle}>Popup Title</h2>
+            <p className={styles.popupdescription}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed enim gravida,
+              rutrum tellus nec, interdum velit. Vestibulum imperdiet nunc eros, consequat bibendum
+              nibh efficitur sed. Fusce sagittis ex vitae eleifend posuere. Nunc interdum orci id
+              massa dapibus laoreet. Pellentesque ut dolor in nunc sagittis feugiat eu eu sem.
+              Curabitur facilisis lectus nisi, quis venenatis purus ultricies at. Nulla bibendum
+              libero erat, non scelerisque turpis placerat nec. Sed vulputate dictum libero,
+              suscipit vehicula quam pharetra sit amet. Nulla vulputate ipsum in eros luctus, quis
+              auctor urna lacinia. Quisque sed ultrices nisi.
+            </p>
+            <iframe
+              className={styles.play}
+              src="https://open.spotify.com/embed/playlist/5SGaFih3XIAg9emzcqeoWC?utm_source=generator"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       )}
