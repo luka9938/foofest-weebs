@@ -1,33 +1,27 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "./practical.module.css";
-import { Map, Marker } from "google-maps-react";
+import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 
-const PracticalPage = () => {
+const PracticalPage = ({ google }) => {
   const [isLocationOpen, setLocationOpen] = useState(false);
   const [isDateOpen, setDateOpen] = useState(false);
   const [isTimeOpen, setTimeOpen] = useState(false);
   const [mapCenter, setMapCenter] = useState({ lat: 0, lng: 0 });
-  const [googleMapsLoaded, setGoogleMapsLoaded] = useState(false);
 
   useEffect(() => {
-    if (!googleMapsLoaded) {
-      const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDi6Fdp3SAkvyIPJyDxJmPDr3anwQkulcY`;
-      script.async = true;
-      script.onload = () => {
-        setGoogleMapsLoaded(true);
-      };
-      document.head.appendChild(script);
-    }
-  }, []);
-
-  const handleLocationClick = () => {
-    setLocationOpen(!isLocationOpen);
-
     if (!isLocationOpen) {
       setMapCenter({ lat: 55.76109378592378, lng: 12.579019359672232 });
     }
+  }, [isLocationOpen]);
+
+  const handleLocationClick = (event) => {
+    event.stopPropagation();
+    setLocationOpen(!isLocationOpen);
+  };
+
+  const handleMapClick = (event) => {
+    event.stopPropagation();
   };
 
   const handleDateClick = () => {
@@ -65,12 +59,12 @@ const PracticalPage = () => {
               ) : (
                 <button>Show Map</button>
               )}
-              {isLocationOpen && googleMapsLoaded && (
+              {isLocationOpen && (
                 <div className={styles.additionalInfo}>
                   Additional information about the location.
-                  <div className={styles.mapContainer}>
+                  <div className={styles.mapContainer} onClick={handleMapClick}>
                     <Map
-                      google={window.google}
+                      google={google}
                       zoom={14}
                       initialCenter={mapCenter}
                       className={styles.map}
@@ -86,6 +80,7 @@ const PracticalPage = () => {
                 </div>
               )}
             </li>
+
             <li
               className={`${styles["practical-item"]} ${
                 isDateOpen ? styles.open : ""
@@ -112,7 +107,8 @@ const PracticalPage = () => {
                 </div>
               )}
             </li>
-            {/* Add more practical information here */}
+            {/*
+Add more practical information here */}
           </ul>
         </div>
       </div>
@@ -120,4 +116,6 @@ const PracticalPage = () => {
   );
 };
 
-export default PracticalPage;
+export default GoogleApiWrapper({
+  apiKey: "YOUR_GOOGLE_MAPS_API_KEY",
+})(PracticalPage);
