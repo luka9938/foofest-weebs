@@ -117,5 +117,5 @@ Add more practical information here */}
 };
 
 export default GoogleApiWrapper({
-  apiKey: "YOUR_GOOGLE_MAPS_API_KEY",
+  apiKey: "AIzaSyDi6Fdp3SAkvyIPJyDxJmPDr3anwQkulcY",
 })(PracticalPage);
