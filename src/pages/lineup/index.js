@@ -140,7 +140,7 @@ export default function Home() {
           </button>
           <div className={styles.popupcontent}>
             <div className={styles.popupimage}></div>
-            <h2 className={styles.popuptitle}>Popup Title</h2>
+            <h2 className={styles.popuptitle}>Title</h2>
             <p className={styles.popupdescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed enim gravida,
               rutrum tellus nec, interdum velit. Vestibulum imperdiet nunc eros, consequat bibendum
