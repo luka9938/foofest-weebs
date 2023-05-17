@@ -102,7 +102,7 @@ const PracticalPage = ({ google }) => {
             Date: July 7th - 9th 2023
             {isDateOpen && (
               <div className={styles.additionalInfo}>
-                Additional information about the date.
+                Warm-up party July 6th at KEA.
               </div>
             )}
           </li>
