@@ -52,14 +52,16 @@
 }
 
 .additionalInfo {
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  margin-left: 20px;
   color: #666;
   font-size: 14px;
 }
 
 .mapContainer {
-  width: 100%;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   position: relative;
   border-radius: 4px;
   overflow: hidden;
@@ -85,14 +87,6 @@
   background-color: #0069d9;
 }
 
-.hide-button {
-  background-color: #dc3545;
-}
-
-.hide-button:hover {
-  background-color: #c82333;
-}
-
 .additionalInfo {
   margin-top: 10px;
   color: #666;
@@ -112,7 +106,15 @@
 }
 
 .showButton {
-  margin-left: 10px; /* Adjust the spacing between the "Show Map" button and the text as needed */
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer; /* Adjust the spacing between the "Show Map" button and the text as needed */
 }
 
 .hideButton {

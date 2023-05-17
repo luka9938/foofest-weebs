@@ -57,14 +57,14 @@ const PracticalPage = ({ google }) => {
                 Location: Steffens lejlighed
               </span>
               {isLocationOpen ? (
-                <button className={styles.hideButton}>Hide Map</button>
+                <button className={styles.hideButton}></button>
               ) : (
                 <button className={styles.showButton}>Show Map</button>
               )}
             </div>
             {isLocationOpen && (
               <div className={styles.additionalInfo}>
-                Additional information about the location.
+                Løvspringsvej 6a.
                 <div className={styles.mapContainer} onClick={handleMapClick}>
                   <Map
                     google={google}
@@ -99,7 +99,7 @@ const PracticalPage = ({ google }) => {
             }`}
             onClick={handleDateClick}
           >
-            Date: Festival Date
+            Date: July 7th - 9th 2023
             {isDateOpen && (
               <div className={styles.additionalInfo}>
                 Additional information about the date.
@@ -112,10 +112,10 @@ const PracticalPage = ({ google }) => {
             }`}
             onClick={handleTimeClick}
           >
-            Time: Festival Time
+            Time: 02PM - 02AM every day!
             {isTimeOpen && (
               <div className={styles.additionalInfo}>
-                Additional information about the time.
+                Doors open at 02PM. Music starts at 03PM.
               </div>
             )}
           </li>
