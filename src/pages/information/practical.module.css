@@ -120,3 +120,38 @@
 .hideButton {
   margin-left: 10px; /* Adjust the spacing between the "Hide Map" button and the text as needed */
 }
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .mapContainer {
+    height: 200px;
+  }
+}
