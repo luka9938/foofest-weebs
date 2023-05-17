@@ -152,3 +152,58 @@
   height: 3rem;
   border-radius: 50%;
 }
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(25%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-25%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    transform: translate3d(25%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-25%, 0, 0);
+  }
+}
+
+.ticker_wrap {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #2c2c30;
+}
+.ticker_wrap .ticker {
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.ticker_wrap .ticker .ticker_item {
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  transform: translate3d(25%, 0, 0);
+  white-space: nowrap;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+.ticker_wrap .ticker .ticker_item:hover {
+  animation-play-state: paused;
+}
+
+.ticker_wrap .ticker .ticker_item span {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
