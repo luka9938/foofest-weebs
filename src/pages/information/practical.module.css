@@ -5,6 +5,7 @@
   padding: 40px;
   background-color: #f7f7f7;
   border-radius: 8px;
+  margin-top: 50px;
 }
 
 .title {
@@ -155,5 +156,26 @@
 
   .mapContainer {
     height: 200px;
+  }
+}
+
+.plusSign {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.plusSign:hover,
+.practical-item:hover {
+  animation-name: plus;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes plus {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
   }
 }
