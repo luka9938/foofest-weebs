@@ -57,7 +57,11 @@ export function Newsletter() {
       {showConfirmation && (
         <div className={styles.confirmationPopup}>
           <div className={styles.popupContent}>
-            <img className={styles.popupImage} src="/199.jpg" alt="HELL YEA" />
+            <img
+              className={styles.popupImage}
+              src="/confirmation.svg"
+              alt="Signed up"
+            />
             <p>Thank you for signing up!</p>
             <p>You will receive our newsletter shortly.</p>
           </div>
