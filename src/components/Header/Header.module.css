@@ -158,15 +158,7 @@
     transform: translate3d(25%, 0, 0);
   }
   100% {
-    transform: translate3d(-25%, 0, 0);
-  }
-}
-@keyframes ticker {
-  0% {
-    transform: translate3d(25%, 0, 0);
-  }
-  100% {
-    transform: translate3d(-25%, 0, 0);
+    transform: translate3d(-89%, 0, 0);
   }
 }
 
@@ -191,28 +183,28 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  transform: translate3d(25%, 0, 0);
   white-space: nowrap;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-name: ticker;
-  animation-duration: 30s;
+  animation-duration: 60s;
 }
 .ticker_wrap .ticker .ticker_item:hover {
   animation-play-state: paused;
 }
 
-.ticker_wrap .ticker .ticker_item p {
+.ticker_wrap .ticker .ticker_item li {
   color: white;
   font-size: 2rem;
   font-weight: bold;
+  list-style-type: none;
 }
 
-.ticker_wrap .ticker .ticker_item p::before {
+.ticker_wrap .ticker .ticker_item li::before {
   content: " / ";
 }
 
-.ticker_wrap .ticker .ticker_item p::after {
+.ticker_wrap .ticker .ticker_item li::after {
   content: " / ";
 }
