@@ -203,16 +203,16 @@
   animation-play-state: paused;
 }
 
-.ticker_wrap .ticker .ticker_item span {
+.ticker_wrap .ticker .ticker_item p {
   color: white;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.ticker_wrap .ticker .ticker_item span::before {
+.ticker_wrap .ticker .ticker_item p::before {
   content: " / ";
 }
 
-.ticker_wrap .ticker .ticker_item span::after {
+.ticker_wrap .ticker .ticker_item p::after {
   content: " / ";
 }

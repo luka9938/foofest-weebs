@@ -1,31 +1,39 @@
 import styles from "./Home.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Bands from "@/components/Bands";
 
-export default function Home() {
-  // https://blog.avneesh.tech/how-to-make-a-count-down-timer-in-react
-  const calculateTimeLeft = () => {
-    const difference = +new Date("2023-06-06T00:00:00+01:00") - +new Date();
-    let timeLeft = {};
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor(
-          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        ),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-    return timeLeft;
-  };
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+export default function Home({ data }) {
+  const selectedData1 = data.slice(0, 42);
+  const selectedData2 = data.slice(42, 84);
+  const selectedData3 = data.slice(84, 126);
+
+  const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    setTimeout(() => {
+    const calculateTimeLeft = () => {
+      const difference = +new Date("2023-07-06T00:00:00+01:00") - +new Date();
+      let timeLeft = {};
+      if (difference > 0) {
+        timeLeft = {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          ),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60),
+        };
+      }
+      return timeLeft;
+    };
+
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-  });
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <main>
       <div className={styles.hero}>
@@ -52,54 +60,43 @@ export default function Home() {
       </div>
       <article className={styles.lineup}>
         <section className={styles.lineup_row}>
-          <h3 className={styles.h3}>[FRI. 6. JUNE]</h3>
+          <h3 className={styles.h3}>[FRI. 6. JULY]</h3>
           <ul className={styles.lineup_names}>
-            <li>Meatpuppet</li>
-            <li>Burn victim</li>
-            <li>Killer whale</li>
-            <li>Regicide</li>
-            <li>Empty throne</li>
-            <li>Taker of skulls</li>
-            <li>Ebon Chalice</li>
-            <li>Corpsegrinder</li>
-            <li>Death Company</li>
-            <li>Blood Angels</li>
-            <li>Meatpuppet</li>
-            <li>Burn victim</li>
-            <li>Killer whale</li>
+            {selectedData1.map((band) => (
+              <Bands key={band.name} name={band.name} />
+            ))}
           </ul>
         </section>
         <section className={`${styles.lineup_row} ${styles.lineup_middle}`}>
-          <h3 className={styles.h3}>[SAT. 7. JUNE]</h3>
+          <h3 className={styles.h3}>[SAT. 7. JULY]</h3>
           <ul className={styles.lineup_names}>
-            <li>Meatpuppet</li>
-            <li>Burn victim</li>
-            <li>Killer whale</li>
-            <li>Regicide</li>
-            <li>Empty throne</li>
-            <li>Taker of skulls</li>
-            <li>Ebon Chalice</li>
-            <li>Corpsegrinder</li>
-            <li>Death Company</li>
-            <li>Blood Angels</li>
+            {selectedData2.map((band) => (
+              <Bands key={band.name} name={band.name} />
+            ))}
           </ul>
         </section>
         <section className={styles.lineup_row}>
-          <h3 className={styles.h3}>[SUN. 8. JUNE]</h3>
+          <h3 className={styles.h3}>[SUN. 8. JULY]</h3>
           <ul className={styles.lineup_names}>
-            <li>Meatpuppet</li>
-            <li>Burn victim</li>
-            <li>Killer whale</li>
-            <li>Regicide</li>
-            <li>Empty throne</li>
-            <li>Taker of skulls</li>
-            <li>Ebon Chalice</li>
-            <li>Corpsegrinder</li>
-            <li>Death Company</li>
-            <li>Blood Angels</li>
+            {selectedData3.map((band) => (
+              <Bands key={band.name} name={band.name} />
+            ))}
           </ul>
         </section>
       </article>
     </main>
   );
+}
+
+export async function getServerSideProps() {
+  const apiUrl = "https://sunrise-innovative-pediatrician.glitch.me/bands";
+
+  const res = await fetch(apiUrl);
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

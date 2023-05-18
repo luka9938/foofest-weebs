@@ -1,9 +1,13 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -89,16 +93,16 @@ export function Header() {
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
           <div className={styles.ticker_item}>
-            <span>Meatpuppet</span>
-            <span>Burn victim</span>
-            <span>Killer whale</span>
-            <span>Regicide</span>
-            <span>Empty throne</span>
-            <span>Taker of skulls</span>
-            <span>Ebon Chalice</span>
-            <span>Corpsegrinder</span>
-            <span>Death Company</span>
-            <span>Blood Angels</span>
+            <p>Meatpuppet</p>
+            <p>Burn victim</p>
+            <p>Killer whale</p>
+            <p>Regicide</p>
+            <p>Empty throne</p>
+            <p>Taker of skulls</p>
+            <p>Ebon Chalice</p>
+            <p>Corpsegrinder</p>
+            <p>Death Company</p>
+            <p>Blood Angels</p>
           </div>
         </div>
       </div>
