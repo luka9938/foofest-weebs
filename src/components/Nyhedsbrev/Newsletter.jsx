@@ -8,7 +8,7 @@ export function Newsletter() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform actions with the submitted email, such as sending it to a server
+    // Perform actions with the submitted email
     console.log("Submitted email:", email);
     // Reset the form
     setEmail("");
@@ -19,11 +19,11 @@ export function Newsletter() {
     // Save the previous page to return to after 3 seconds
     setPreviousPage(window.location.pathname);
 
-    // Hide the confirmation popup after 3 seconds and return to the previous page
+    // Hide the confirmation popup after 2,5 seconds and return to the previous page
     setTimeout(() => {
       setShowConfirmation(false);
       setPreviousPage(null);
-    }, 3000);
+    }, 2500);
   };
 
   const handleChange = (e) => {
@@ -57,14 +57,10 @@ export function Newsletter() {
       {showConfirmation && (
         <div className={styles.confirmationPopup}>
           <div className={styles.popupContent}>
+            <img className={styles.popupImage} src="/199.jpg" alt="HELL YEA" />
             <p>Thank you for signing up!</p>
             <p>You will receive our newsletter shortly.</p>
           </div>
-        </div>
-      )}
-      {previousPage && (
-        <div className={styles.returnMessage}>
-          <p>Returning to the previous page...</p>
         </div>
       )}
     </>
