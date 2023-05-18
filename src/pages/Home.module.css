@@ -10,7 +10,7 @@
 }
 
 .h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -51,4 +51,43 @@
   width: clamp(100px, 500px);
   background-color: var(--color-darker);
   gap: 3rem;
+}
+
+.lineup_row {
+  margin-bottom: 10vh;
+}
+
+.lineup_names {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  width: 80vw;
+}
+
+.lineup_names li {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 1.95rem;
+  letter-spacing: 0.01em;
+}
+
+.lineup_names li:before {
+  content: "//";
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 2rem;
+}
+
+.lineup_names li:nth-child(1),
+.lineup_names li:nth-child(2) {
+  font-size: 3rem;
+}
+
+.lineup_names li:nth-child(3),
+.lineup_names li:nth-child(4),
+.lineup_names li:nth-child(5) {
+  font-size: 2.5rem;
 }

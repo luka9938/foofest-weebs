@@ -89,14 +89,16 @@ export function Header() {
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
           <div className={styles.ticker_item}>
-            <span>Funny</span>
-            <span>Things</span>
-            <span>Stuff</span>
-            <span>Random</span>
-            <span>Funny</span>
-            <span>Things</span>
-            <span>Stuff</span>
-            <span>Random</span>
+            <span>Meatpuppet</span>
+            <span>Burn victim</span>
+            <span>Killer whale</span>
+            <span>Regicide</span>
+            <span>Empty throne</span>
+            <span>Taker of skulls</span>
+            <span>Ebon Chalice</span>
+            <span>Corpsegrinder</span>
+            <span>Death Company</span>
+            <span>Blood Angels</span>
           </div>
         </div>
       </div>

@@ -186,15 +186,16 @@
   overflow: hidden;
 }
 .ticker_wrap .ticker .ticker_item {
-  width: 400vw;
+  width: 200vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   transform: translate3d(25%, 0, 0);
   white-space: nowrap;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-direction: alternate;
   animation-name: ticker;
   animation-duration: 30s;
 }
@@ -206,4 +207,12 @@
   color: white;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.ticker_wrap .ticker .ticker_item span::before {
+  content: " / ";
+}
+
+.ticker_wrap .ticker .ticker_item span::after {
+  content: " / ";
 }

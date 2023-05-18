@@ -53,15 +53,51 @@ export default function Home() {
       <article className={styles.lineup}>
         <section className={styles.lineup_row}>
           <h3 className={styles.h3}>[FRI. 6. JUNE]</h3>
-          <ul></ul>
+          <ul className={styles.lineup_names}>
+            <li>Meatpuppet</li>
+            <li>Burn victim</li>
+            <li>Killer whale</li>
+            <li>Regicide</li>
+            <li>Empty throne</li>
+            <li>Taker of skulls</li>
+            <li>Ebon Chalice</li>
+            <li>Corpsegrinder</li>
+            <li>Death Company</li>
+            <li>Blood Angels</li>
+            <li>Meatpuppet</li>
+            <li>Burn victim</li>
+            <li>Killer whale</li>
+          </ul>
         </section>
-        <section className={styles.lineup_row}>
+        <section className={`${styles.lineup_row} ${styles.lineup_middle}`}>
           <h3 className={styles.h3}>[SAT. 7. JUNE]</h3>
-          <ul></ul>
+          <ul className={styles.lineup_names}>
+            <li>Meatpuppet</li>
+            <li>Burn victim</li>
+            <li>Killer whale</li>
+            <li>Regicide</li>
+            <li>Empty throne</li>
+            <li>Taker of skulls</li>
+            <li>Ebon Chalice</li>
+            <li>Corpsegrinder</li>
+            <li>Death Company</li>
+            <li>Blood Angels</li>
+          </ul>
         </section>
         <section className={styles.lineup_row}>
           <h3 className={styles.h3}>[SUN. 8. JUNE]</h3>
-          <ul></ul>
+          <ul className={styles.lineup_names}>
+            <li>Meatpuppet</li>
+            <li>Burn victim</li>
+            <li>Killer whale</li>
+            <li>Regicide</li>
+            <li>Empty throne</li>
+            <li>Taker of skulls</li>
+            <li>Ebon Chalice</li>
+            <li>Corpsegrinder</li>
+            <li>Death Company</li>
+            <li>Blood Angels</li>
+          </ul>
         </section>
       </article>
     </main>
