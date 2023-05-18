@@ -1,8 +1,9 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Bands from "@/components/Bands";
 
-export function Header() {
+export function Header({ data }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -93,19 +94,26 @@ export function Header() {
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
           <div className={styles.ticker_item}>
-            <p>Meatpuppet</p>
-            <p>Burn victim</p>
-            <p>Killer whale</p>
-            <p>Regicide</p>
-            <p>Empty throne</p>
-            <p>Taker of skulls</p>
-            <p>Ebon Chalice</p>
-            <p>Corpsegrinder</p>
-            <p>Death Company</p>
-            <p>Blood Angels</p>
+            {Array.isArray(data) &&
+              data.map((band) => <Bands key={band.name} name={band.name} />)}
           </div>
         </div>
       </div>
     </header>
   );
 }
+
+export async function getServerSideProps() {
+  const apiUrl = "https://sunrise-innovative-pediatrician.glitch.me/bands";
+
+  const res = await fetch(apiUrl);
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default Header;
