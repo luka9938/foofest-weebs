@@ -1,9 +1,13 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);

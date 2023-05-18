@@ -7,32 +7,33 @@ export default function Home({ data }) {
   const selectedData1 = data.slice(0, 42);
   const selectedData2 = data.slice(42, 84);
   const selectedData3 = data.slice(84, 126);
-  // https://blog.avneesh.tech/how-to-make-a-count-down-timer-in-react
-  const calculateTimeLeft = () => {
-    const difference = +new Date("2023-07-06T00:00:00+01:00") - +new Date();
-    let timeLeft = {};
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor(
-          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        ),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-    return timeLeft;
-  };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const calculateTimeLeft = () => {
+      const difference = +new Date("2023-07-06T00:00:00+01:00") - +new Date();
+      let timeLeft = {};
+      if (difference > 0) {
+        timeLeft = {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          ),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60),
+        };
+      }
+      return timeLeft;
+    };
+
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearTimeout(timer);
+    return () => clearInterval(timer);
   }, []);
+
   return (
     <main>
       <div className={styles.hero}>
@@ -87,19 +88,12 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps(ctx) {
-  // Construct the API URL with query parameter
-  const searchParams = new URLSearchParams();
-  searchParams.append("name", ctx.query.name);
-  const apiUrl =
-    "https://sunrise-innovative-pediatrician.glitch.me/bands?" +
-    searchParams.toString();
+export async function getServerSideProps() {
+  const apiUrl = "https://sunrise-innovative-pediatrician.glitch.me/bands";
 
-  // Fetch data from the API
   const res = await fetch(apiUrl);
   const data = await res.json();
 
-  // Return the data inside props
   return {
     props: {
       data,
