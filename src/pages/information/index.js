@@ -69,11 +69,11 @@ const PracticalPage = ({ google }) => {
           </li>
 
           <li className={`${styles["practical-item"]} ${isDateOpen ? styles.open : ""}`} onClick={handleDateClick}>
-            Date: July 7th - 9th 2023
+            Date: July 7th - 9th 2023 <span className={styles.plusSign}>+</span>
             {isDateOpen && <div className={styles.additionalInfo}>Warm-up party July 6th at KEA.</div>}
           </li>
           <li className={`${styles["practical-item"]} ${isTimeOpen ? styles.open : ""}`} onClick={handleTimeClick}>
-            Time: 02PM - 02AM every day!
+            Time: 02PM - 02AM every day! <span className={styles.plusSign}>+</span>
             {isTimeOpen && <div className={styles.additionalInfo}>Doors open at 02PM. Music starts at 03PM.</div>}
           </li>
         </ul>

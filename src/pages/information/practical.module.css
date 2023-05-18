@@ -5,6 +5,7 @@
   padding: 40px;
   background-color: #f7f7f7;
   border-radius: 8px;
+  margin-top: 50px;
 }
 
 .title {
@@ -84,6 +85,7 @@
   cursor: pointer;
 }
 
+.showButton:hover,
 .button:hover {
   background-color: #0069d9;
 }
@@ -99,11 +101,11 @@
 .locationContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Adjust the spacing as needed */
+  margin-bottom: 10px;
 }
 
 .locationText {
-  margin-right: 10px; /* Adjust the spacing between the text and button as needed */
+  margin-right: 10px;
 }
 
 .showButton {
@@ -115,11 +117,11 @@
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 4px;
-  cursor: pointer; /* Adjust the spacing between the "Show Map" button and the text as needed */
+  cursor: pointer;
 }
 
 .hideButton {
-  margin-left: 10px; /* Adjust the spacing between the "Hide Map" button and the text as needed */
+  margin-left: 10px;
 }
 @media (max-width: 600px) {
   .container {
@@ -154,5 +156,26 @@
 
   .mapContainer {
     height: 200px;
+  }
+}
+
+.plusSign {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.plusSign:hover,
+.practical-item:hover {
+  animation-name: plus;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes plus {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
   }
 }
