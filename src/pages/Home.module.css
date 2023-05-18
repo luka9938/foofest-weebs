@@ -53,6 +53,11 @@
   gap: 3rem;
 }
 
+.lineup {
+  padding: 5vw;
+  gap: 2vw;
+}
+
 .lineup_row {
   margin-bottom: 10vh;
 }
