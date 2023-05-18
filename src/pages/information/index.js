@@ -36,42 +36,23 @@ const PracticalPage = ({ google }) => {
     <div className={styles.container}>
       <Head>
         <title>Practical Information - Your Festival Name</title>
-        <meta
-          name="description"
-          content="Practical information for Your Festival Name"
-        />
+        <meta name="description" content="Practical information for Your Festival Name" />
       </Head>
 
       <h1 className={styles.title}>Practical Information</h1>
       <div className={styles.information}>
         <h2 className={styles.subtitle}>Important Details:</h2>
         <ul className={styles["practical-list"]}>
-          <li
-            className={`${styles["practical-item"]} ${
-              isLocationOpen ? styles.open : ""
-            }`}
-            onClick={handleLocationClick}
-          >
+          <li className={`${styles["practical-item"]} ${isLocationOpen ? styles.open : ""}`} onClick={handleLocationClick}>
             <div className={styles.locationContainer}>
-              <span className={styles.locationText}>
-                Location: Steffens lejlighed
-              </span>
-              {isLocationOpen ? (
-                <button className={styles.hideButton}></button>
-              ) : (
-                <button className={styles.showButton}>Show Map</button>
-              )}
+              <span className={styles.locationText}>Location: Steffens lejlighed</span>
+              {isLocationOpen ? <button className={styles.hideButton}></button> : <button className={styles.showButton}>Show Map</button>}
             </div>
             {isLocationOpen && (
               <div className={styles.additionalInfo}>
                 Løvspringsvej 6a.
                 <div className={styles.mapContainer} onClick={handleMapClick}>
-                  <Map
-                    google={google}
-                    zoom={14}
-                    initialCenter={mapCenter}
-                    className={styles.map}
-                  >
+                  <Map google={google} zoom={14} initialCenter={mapCenter} className={styles.map}>
                     <Marker
                       position={{
                         lat: 55.76074970251176,
@@ -81,43 +62,19 @@ const PracticalPage = ({ google }) => {
                   </Map>
                 </div>
                 <div className={styles.buttonContainer}>
-                  {isLocationOpen ? (
-                    <button className={`${styles.button} ${styles.hideButton}`}>
-                      Hide Map
-                    </button>
-                  ) : (
-                    <button className={styles.button}>Show Map</button>
-                  )}
+                  {isLocationOpen ? <button className={`${styles.button} ${styles.hideButton}`}>Hide Map</button> : <button className={styles.button}>Show Map</button>}
                 </div>
               </div>
             )}
           </li>
 
-          <li
-            className={`${styles["practical-item"]} ${
-              isDateOpen ? styles.open : ""
-            }`}
-            onClick={handleDateClick}
-          >
+          <li className={`${styles["practical-item"]} ${isDateOpen ? styles.open : ""}`} onClick={handleDateClick}>
             Date: July 7th - 9th 2023
-            {isDateOpen && (
-              <div className={styles.additionalInfo}>
-                Warm-up party July 6th at KEA.
-              </div>
-            )}
+            {isDateOpen && <div className={styles.additionalInfo}>Warm-up party July 6th at KEA.</div>}
           </li>
-          <li
-            className={`${styles["practical-item"]} ${
-              isTimeOpen ? styles.open : ""
-            }`}
-            onClick={handleTimeClick}
-          >
+          <li className={`${styles["practical-item"]} ${isTimeOpen ? styles.open : ""}`} onClick={handleTimeClick}>
             Time: 02PM - 02AM every day!
-            {isTimeOpen && (
-              <div className={styles.additionalInfo}>
-                Doors open at 02PM. Music starts at 03PM.
-              </div>
-            )}
+            {isTimeOpen && <div className={styles.additionalInfo}>Doors open at 02PM. Music starts at 03PM.</div>}
           </li>
         </ul>
       </div>
