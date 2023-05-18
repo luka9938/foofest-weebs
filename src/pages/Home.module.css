@@ -1,0 +1,98 @@
+.h1 {
+  font-size: 7.594rem;
+  line-height: 8rem;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 3.157rem;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: clamp(100px, 500px);
+  background-color: var(--color-darker);
+  gap: 1rem;
+}
+
+.hero_btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid blue;
+  font-weight: bold;
+}
+
+.hero_btn:hover {
+  transition: 0.5s;
+  background: blue;
+  color: black;
+}
+
+.btn_container {
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: clamp(100px, 500px);
+  background-color: var(--color-darker);
+  gap: 3rem;
+}
+
+.lineup {
+  padding: 5vw;
+  gap: 2vw;
+}
+
+.lineup_row {
+  margin-bottom: 10vh;
+}
+
+.lineup_names {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  width: 80vw;
+}
+
+.lineup_names li {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 1.95rem;
+  letter-spacing: 0.01em;
+}
+
+.lineup_names li:before {
+  content: "//";
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 2rem;
+}
+
+.lineup_names li:nth-child(1),
+.lineup_names li:nth-child(2) {
+  font-size: 3rem;
+}
+
+.lineup_names li:nth-child(3),
+.lineup_names li:nth-child(4),
+.lineup_names li:nth-child(5) {
+  font-size: 2.5rem;
+}

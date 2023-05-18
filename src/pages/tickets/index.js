@@ -1,4 +1,5 @@
 import styles from "./tickets.module.css";
+import Link from "next/link";
 
 export default function Tickets() {
   return (
@@ -11,16 +12,16 @@ export default function Tickets() {
           <article className={styles.article}>
             <h2 className={styles.h2}>Regular</h2>
             <ul className={styles.ul}>
-              <li>- Alle 8 dage på Foofest uden camping.</li>
+              <li>- Alle 3 dage på Foofest uden camping.</li>
               <li>
                 - Den essentielle pakke til <br />
                 "live hard cum fast"
               </li>
             </ul>
             <h3 className={styles.h3}>799,-</h3>
-            <a className={styles.a} href="#">
+            <Link className={styles.a} href="#">
               KØB NU
-            </a>
+            </Link>
           </article>
           <article className={styles.article}>
             <h2 className={styles.h2}>VIP</h2>
@@ -37,9 +38,9 @@ export default function Tickets() {
               <li>- Hemmelig merchandisebutik med en stærkt begrænset vare.</li>
             </ul>
             <h3 className={styles.h3}>1299,-</h3>
-            <a className={styles.a} href="#">
+            <Link className={styles.a} href="#">
               KØB NU
-            </a>
+            </Link>
           </article>
         </div>
       </main>

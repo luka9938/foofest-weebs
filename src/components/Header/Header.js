@@ -16,7 +16,14 @@ export function Header() {
   return (
     <header className={styles.navbar}>
       <div className={`${styles.container} ${styles.nav_container}`}>
-        <input className={styles.checkbox} type="checkbox" name="" id="" checked={isMenuOpen} onChange={toggleMenu} />
+        <input
+          className={styles.checkbox}
+          type="checkbox"
+          name=""
+          id=""
+          checked={isMenuOpen}
+          onChange={toggleMenu}
+        />
         <div className={styles.hamburger_lines}>
           <span className={`${styles.line} ${styles.line1}`}></span>
           <span className={`${styles.line} ${styles.line2}`}></span>
@@ -76,6 +83,22 @@ export function Header() {
             <Link href="/" aria-label="Monkepolitik">
               Twitter
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.ticker_wrap}>
+        <div className={styles.ticker}>
+          <div className={styles.ticker_item}>
+            <span>Meatpuppet</span>
+            <span>Burn victim</span>
+            <span>Killer whale</span>
+            <span>Regicide</span>
+            <span>Empty throne</span>
+            <span>Taker of skulls</span>
+            <span>Ebon Chalice</span>
+            <span>Corpsegrinder</span>
+            <span>Death Company</span>
+            <span>Blood Angels</span>
           </div>
         </div>
       </div>
