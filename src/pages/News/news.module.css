@@ -140,7 +140,7 @@
 }
 
 .learnMore:hover .circle .icon.arrow {
-  background: #fff;
+  background: #a09393;
   transform: translate(1rem, 0);
 }
 
