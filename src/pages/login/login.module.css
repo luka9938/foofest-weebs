@@ -34,6 +34,7 @@
 .inputBox1 {
   position: relative;
   width: 250px;
+  margin-bottom: 15px;
 }
 
 .inputBox input,
@@ -110,9 +111,51 @@
   font-size: 10px;
   letter-spacing: 2px;
   margin-bottom: 3em;
+  margin-top: 2em;
 }
 
 .enter:hover {
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+.toggle {
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.toggle:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.toggle:active {
+  transform: translateY(-1px);
+}
+
+.signupMessage {
+  border-radius: 5px;
+  border: 2px solid #000;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 5px;
 }
