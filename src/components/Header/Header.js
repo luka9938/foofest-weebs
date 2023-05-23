@@ -57,7 +57,7 @@ export function Header({ data }) {
           </li>
           <li>
             <Link href="/login" onClick={closeMenu} aria-label="Login">
-              NEWS
+              LOGIN
             </Link>
           </li>
           <li>
