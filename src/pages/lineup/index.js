@@ -64,7 +64,13 @@ export default function Lineup() {
     <div className={styles.container}>
       {bands.map((band) => (
         <div key={band.id} className={`${styles.card} ${styles.smallCard}`}>
-          <div className={styles.cardimg}></div>
+          <div
+            className={styles.cardimg}
+            style={{
+              backgroundImage: `url(${band.logo})`,
+              backgroundSize: "cover",
+            }}
+          ></div>
           <div className={styles.cardinfo}>
             <p className={styles.title} onClick={() => togglePopup(band)}>
               {band.name}

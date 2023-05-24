@@ -27,10 +27,13 @@
 }
 
 .cardimg {
-  background: #00ff88;
-  height: 100%;
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  position: absolute;
+  height: 100%;
+
   transition: transform 0.3s ease-in-out;
   z-index: 2;
 }
