@@ -53,7 +53,7 @@ export default function Home({ data }) {
           <Link className={styles.hero_btn} href="#">
             BUY TICKET
           </Link>
-          <Link className={styles.hero_btn} href="#">
+          <Link className={styles.hero_btn} href="login">
             VOLUNTEER
           </Link>
         </div>
