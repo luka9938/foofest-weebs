@@ -5,12 +5,21 @@ export default function Lineup() {
   const [showPopup, setShowPopup] = useState(false);
   const [bands, setBands] = useState([]);
   const [schedule, setSchedule] = useState([]);
+  const [bandBios, setBandBios] = useState({});
 
   useEffect(() => {
     // Fetch bands data from the API
     fetch("https://sunrise-innovative-pediatrician.glitch.me/bands")
       .then((response) => response.json())
-      .then((data) => setBands(data))
+      .then((data) => {
+        setBands(data);
+        // Extract band bios and store them in bandBios state
+        const bios = {};
+        data.forEach((band) => {
+          bios[band.name] = band.bio;
+        });
+        setBandBios(bios);
+      })
       .catch((error) => console.error(error));
 
     // Fetch schedule data from the API
@@ -67,7 +76,7 @@ export default function Lineup() {
           <div
             className={styles.cardimg}
             style={{
-              backgroundImage: `url(${band.logo})`,
+              backgroundImage: `url(/${band.logo})`,
               backgroundSize: "cover",
             }}
           ></div>
@@ -106,6 +115,10 @@ export default function Lineup() {
             <h3 className={styles.popupsubtitle}>End Time:</h3>
             <p className={styles.popupdescription}>
               {getBandSchedule(showPopup.name)?.end}
+            </p>
+            <h3 className={styles.popupsubtitle}>Bio:</h3>
+            <p className={styles.popupdescription}>
+              {bandBios[showPopup.name]}
             </p>
           </div>
         </div>
