@@ -33,26 +33,23 @@ export function Newsletter() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.border}>
-          <h2 className={styles.h2}>Subscribe to our Newsletter</h2>
-          <form className={styles.form} onSubmit={handleSubmit}>
-            <label className={styles.label} htmlFor="news-email">
-              Email
-            </label>
-            <input
-              id="news-email"
-              className={styles.input}
-              type="email"
-              value={email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              required
-            />
-            <button className={styles.button} type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
+        <h2 className={styles.h2}>Subscribe to our Newsletter</h2>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <label className={styles.label} htmlFor="news-email">
+            Email
+          </label>
+          <input
+            className={styles.input}
+            type="email"
+            value={email}
+            onChange={handleChange}
+            placeholder="Enter your email"
+            required
+          />
+          <button className={styles.button} type="submit">
+            Subscribe
+          </button>
+        </form>
       </div>
       {showConfirmation && (
         <div className={styles.confirmationPopup}>
