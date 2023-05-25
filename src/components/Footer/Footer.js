@@ -19,16 +19,16 @@ export function Footer() {
         </Link>
       </div>
       <div className={styles.so_me}>
-        <Link href="/" aria-label="Monkepolitik">
+        <Link href="/" aria-label="Facebook">
           Facebook
         </Link>
-        <Link href="/" aria-label="Monkepolitik">
+        <Link href="/" aria-label="Instagram">
           Instagram
         </Link>
-        <Link href="/" aria-label="Monkepolitik">
+        <Link href="/" aria-label="Youtube">
           Youtube
         </Link>
-        <Link href="/" aria-label="Monkepolitik">
+        <Link href="/" aria-label="Twitter">
           Twitter
         </Link>
       </div>

@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: var(--color-main);
   z-index: 99;
 }
 
@@ -18,7 +18,7 @@
 
 .navbar .menu_items {
   display: flex;
-  background-color: white;
+  background-color: var(--color-main);
   z-index: 100;
 }
 
@@ -28,7 +28,7 @@
 
 .navbar .nav_container a {
   text-decoration: none;
-  color: #0e2431;
+  color: var(--color-text);
   font-weight: 500;
   font-size: 3rem;
   padding: 0.7rem;
@@ -37,6 +37,7 @@
 
 .navbar .nav_container a:hover {
   font-weight: bolder;
+  color: var(--color-headline);
 }
 
 .nav_container {
@@ -74,7 +75,13 @@
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: var(--color-text);
+}
+
+.nav_container .checkbox:hover ~ .hamburger_lines .line,
+.nav_container .hamburger_lines .line:hover,
+.nav_container input[type="checkbox"]:checked ~ .hamburger_lines .line {
+  background-color: var(--color-headline);
 }
 
 .nav_container .hamburger_lines .line1 {
@@ -114,7 +121,7 @@
   top: 5px;
   right: 15px;
   font-size: 1.2rem;
-  color: #0e2431;
+  color: var(--color-text);
 }
 
 .nav_container input[type="checkbox"]:checked ~ .menu_items {
@@ -166,7 +173,7 @@
   text-align: center;
   position: relative;
   z-index: 1;
-  background-color: #2c2c30;
+  background-color: var(--color-main);
 }
 .ticker_wrap .ticker {
   width: 100vw;
@@ -195,7 +202,7 @@
 }
 
 .ticker_wrap .ticker .ticker_item li {
-  color: white;
+  color: var(--color-headline);
   font-size: 2rem;
   font-weight: bold;
   list-style-type: none;

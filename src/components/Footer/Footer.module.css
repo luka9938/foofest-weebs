@@ -8,8 +8,12 @@
   gap: 10vw;
   border-top: 2px;
   border-bottom: 2px;
-  border-color: blue;
+  border-color: var(--color-headline);
   border-style: solid;
+}
+
+.footer_container a:hover {
+  color: var(--color-headline);
 }
 
 .so_me {
@@ -22,7 +26,7 @@
 }
 
 .so_me a {
-  border: 2px solid blue;
+  border: 2px solid var(--color-headline);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
