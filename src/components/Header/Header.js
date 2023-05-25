@@ -93,10 +93,10 @@ export function Header({ data }) {
       </div>
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
-          <div className={styles.ticker_item}>
+          <ul className={styles.ticker_item}>
             {Array.isArray(data) &&
               data.map((band) => <Bands key={band.name} name={band.name} />)}
-          </div>
+          </ul>
         </div>
       </div>
     </header>

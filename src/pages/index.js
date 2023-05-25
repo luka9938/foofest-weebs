@@ -47,8 +47,8 @@ export default function Home({ data }) {
           <span>{timeLeft.seconds}</span>
           <span> Sek </span>
         </h2>
+        <h1 className={styles.h1}>FOOFEST</h1>
         <h2 className={styles.h2}>CHARLOTTENLUND</h2>
-        <h1 className={styles.h1}>LIVE FAST CUM HARD</h1>
         <div className={styles.btn_container}>
           <Link className={styles.hero_btn} href="#">
             BUY TICKET

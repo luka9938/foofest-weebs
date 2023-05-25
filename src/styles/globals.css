@@ -6,6 +6,30 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Germania One", cursive;
+}
+
+h2 {
+  font-family: "Pirata One", cursive;
+}
+
+h3 {
+  font-family: "Pirata One", cursive;
+}
+
+li {
+  font-family: "Sen", sans-serif;
+}
+
+p {
+  font-family: "Sen", sans-serif;
+}
+
+a {
+  font-family: "Germania One", cursive;
+}
+
 .hero {
   display: flex;
   min-height: 50vh;
