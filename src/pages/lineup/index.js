@@ -97,7 +97,7 @@ export default function Lineup() {
             <div className={styles.popupimage}>
               <iframe
                 className={styles.spotify}
-                src="https://open.spotify.com/embed/playlist/5SGaFih3XIAg9emzcqeoWC?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/playlist/1a9MQtgeYVaRjsXA5NCdW2?"
                 allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
