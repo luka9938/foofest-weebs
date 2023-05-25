@@ -14,12 +14,10 @@ export default function Login() {
     e.preventDefault();
     const formData = new FormData(e.target);
     const formDataObject = Object.fromEntries(formData.entries());
-    console.log(formDataObject); // You can perform further actions with the form data
+    console.log(formDataObject);
     if (!loginMode) {
       setSignupMessage("Signup successful!");
     } else {
-      // Perform login actions here
-      // Redirect to a new site after successful login
       window.location.href = "./frivillig";
     }
   };
@@ -51,6 +49,7 @@ export default function Login() {
             {loginMode ? "Login" : "Sign Up"}
           </button>
         </form>
+
         <a className={styles.toggle} onClick={handleToggleMode}>
           {loginMode ? "Sign Up" : "Login"}
         </a>

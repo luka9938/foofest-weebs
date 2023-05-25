@@ -56,6 +56,11 @@ export function Header({ data }) {
             </Link>
           </li>
           <li>
+            <Link href="/login" onClick={closeMenu} aria-label="Login">
+              LOGIN
+            </Link>
+          </li>
+          <li>
             <Link href="/news" onClick={closeMenu} aria-label="News">
               NEWS
             </Link>
@@ -94,8 +99,7 @@ export function Header({ data }) {
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
           <ul className={styles.ticker_item}>
-            {Array.isArray(data) &&
-              data.map((band) => <Bands key={band.name} name={band.name} />)}
+            {Array.isArray(data) && data.map((band) => <Bands key={band.name} name={band.name} />)}
           </ul>
         </div>
       </div>
