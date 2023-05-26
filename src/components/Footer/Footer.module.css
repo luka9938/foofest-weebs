@@ -12,8 +12,12 @@
   border-style: solid;
 }
 
-.footer_container a:hover {
+.footer_container a {
   color: var(--color-headline);
+}
+
+.footer_container a:hover {
+  color: var(--color-main3);
 }
 
 .so_me {

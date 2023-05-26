@@ -154,7 +154,7 @@
 }
 
 .so_me a {
-  border: 2px solid blue;
+  border: 2px solid var(--color-headline);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
