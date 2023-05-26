@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: #000;
+  color: var(--color-text);
+}
+
+:root {
+  --color-main: #000;
+  --color-main2: #25372d;
+  --color-main3: #642e24;
+  --color-headline: #ce5e4a;
+  --color-text: #fcf2c1;
+  --font-headline: "Germania One", cursive;
+  --font-headline2: "Pirata One", cursive;
+  --font-paragraph: "Sen", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  font-family: "Germania One", cursive;
+  font-family: var(--font-headline);
+  color: var(--color-headline);
 }
 
 h2 {
-  font-family: "Pirata One", cursive;
+  font-family: var(--font-headline2);
+  color: var(--color-text);
 }
 
 h3 {
-  font-family: "Pirata One", cursive;
+  font-family: var(--font-headline2);
+  color: var(--color-text);
 }
 
 li {
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-paragraph);
+  color: var(--color-text);
 }
 
 p {
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-paragraph);
+  color: var(--color-text);
 }
 
 a {
-  font-family: "Germania One", cursive;
+  font-family: var(--font-headline);
+  color: var(--color-text);
 }
 
 .hero {
