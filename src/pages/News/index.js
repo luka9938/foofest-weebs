@@ -24,16 +24,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -51,16 +44,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -78,16 +64,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -105,16 +84,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -132,16 +104,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -159,16 +124,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -186,16 +144,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
@@ -213,16 +164,9 @@ function NewsArticles() {
         />
         <h2 className={styles.h2}>Overskrift</h2>
         <p className={styles.description}>
-<<<<<<< HEAD
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          faucibus non nisl ac tempus. Etiam accumsan massa nec scelerisque
-          pharetra. Nunc dui urna, blandit sit amet mollis eget, condimentum a
-          purus. Nullam facilisis neque interdum tristique ultricies.
-=======
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
           tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
           mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
->>>>>>> steffens_branch
         </p>
         <p className={styles.dato}>Dato</p>
         <button className={styles.learnMore}>
