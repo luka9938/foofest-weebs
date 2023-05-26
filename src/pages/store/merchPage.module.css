@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   padding: 20px;
 }
 
@@ -12,8 +12,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #ffffff;
-  border: 4px solid rgb(0, 0, 0);
+  background-color: black;
+  border: 4px solid #ce5e4a;
   padding: 20px;
   border-radius: 20px;
   color: rgb(0, 0, 0);
@@ -23,25 +23,32 @@
 }
 
 .button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 4px solid rgb(0, 0, 0);
+  background-color: transparent;
+  border: 2px solid var(--color-headline);
   border-radius: 20px;
-  /* border: none; */
-  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fcf2c1;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
 }
 
 .button:hover {
-  background-color: gray;
-  color: #000000;
+  background-color: #ce5e4a;
+  color: #fcf2c1;
 }
 
 .button:active {
-  background-color: #d03737;
+  background-color: #642e24;
 }

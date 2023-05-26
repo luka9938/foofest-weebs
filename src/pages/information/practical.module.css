@@ -3,20 +3,20 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #f7f7f7;
+  background-color: black;
   border-radius: 8px;
   margin-top: 50px;
 }
 
 .title {
-  color: #333;
+  color: #ce5e4a;
   font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .subtitle {
-  color: #555;
+  color: #ce5e4a;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -31,7 +31,7 @@
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fcf2c1;
   padding-bottom: 10px;
 }
 
@@ -43,11 +43,11 @@
 
 .text {
   font-size: 16px;
-  color: #333;
+  color: #fcf2c1;
 }
 
 .open {
-  background-color: #f7f7f7;
+  background-color: black;
   border-radius: 4px;
   padding: 10px;
   transition: all 0.3s ease;
@@ -57,7 +57,7 @@
   margin-top: 12px;
   margin-bottom: 14px;
   margin-left: 20px;
-  color: #666;
+  color: #fcf2c1;
   font-size: 14px;
 }
 
@@ -76,8 +76,8 @@
 
 .button {
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ce5e4a;
+  color: #fcf2c1;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -87,12 +87,12 @@
 
 .showButton:hover,
 .button:hover {
-  background-color: #0069d9;
+  background-color: #ce5e4a;
 }
 
 .additionalInfo {
   margin-top: 10px;
-  color: #666;
+  color: #fcf2c1;
 }
 
 .buttonContainer {
@@ -111,8 +111,8 @@
 .showButton {
   margin-left: 10px;
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ce5e4a;
+  color: #fcf2c1;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
