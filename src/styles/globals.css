@@ -59,6 +59,5 @@ a {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: clamp(100px, 500px);
-  background-color: var(--color-darker);
+  background-color: var(--color-main);
 }

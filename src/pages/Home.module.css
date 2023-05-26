@@ -27,6 +27,18 @@
   gap: 3rem;
 }
 
+.btn_container {
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: clamp(100px, 500px);
+  background-color: var(--color-darker);
+  gap: 3rem;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -36,7 +48,6 @@
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  width: clamp(100px, 500px);
   background-color: var(--color-main);
   gap: 1rem;
   background-image: linear-gradient(
