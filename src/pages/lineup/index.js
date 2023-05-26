@@ -98,30 +98,37 @@ export default function Lineup() {
           <button className={styles.closeButton} onClick={closePopup}>
             Close
           </button>
-          <div className={styles.popupcontent}>
-            <div className={styles.popupimage}>
-              <iframe
-                className={styles.spotify}
-                src="https://open.spotify.com/embed/playlist/1a9MQtgeYVaRjsXA5NCdW2?"
-                allowFullScreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
+          <div className={styles.item1}>
+            <iframe
+              className={styles.spotify}
+              src="https://open.spotify.com/embed/playlist/1a9MQtgeYVaRjsXA5NCdW2?"
+              allowFullScreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <div className={styles.flex}>
+              <h3 className={styles.popupsubtitle}>Scheduled Stage:</h3>
+              <p className={styles.popupdescription}>
+                {getStageName(getBandSchedule(showPopup.name)?.stageId)}
+              </p>
             </div>
+            <div className={styles.flex}>
+              <h3 className={styles.popupsubtitle}>Start Time:</h3>
+              <p className={styles.popupdescription}>
+                {getBandSchedule(showPopup.name)?.start}
+              </p>
+            </div>
+            <div className={styles.flex}>
+              <h3 className={styles.popupsubtitle}>End Time:</h3>
+              <p className={styles.popupdescription}>
+                {getBandSchedule(showPopup.name)?.end}
+              </p>
+            </div>
+          </div>
+          <div className={styles.item2}>
             <h2 className={styles.popuptitle}>{showPopup.name}</h2>
-            <h3 className={styles.popupsubtitle}>Scheduled Stage:</h3>
-            <p className={styles.popupdescription}>
-              {getStageName(getBandSchedule(showPopup.name)?.stageId)}
-            </p>
-            <h3 className={styles.popupsubtitle}>Start Time:</h3>
-            <p className={styles.popupdescription}>
-              {getBandSchedule(showPopup.name)?.start}
-            </p>
-            <h3 className={styles.popupsubtitle}>End Time:</h3>
-            <p className={styles.popupdescription}>
-              {getBandSchedule(showPopup.name)?.end}
-            </p>
-            <h3 className={styles.popupsubtitle}>Bio:</h3>
+          </div>
+          <div className={styles.item3}>
             <p className={styles.popupdescription}>
               {bandBios[showPopup.name]}
             </p>
