@@ -50,11 +50,7 @@
   flex-wrap: wrap;
   background-color: var(--color-main);
   gap: 1rem;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      var(--color-main)
-    ),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--color-main)),
     url("../assets/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -161,11 +157,7 @@
   width: clamp(100px, 500px);
   background-color: var(--color-main);
   gap: 1rem;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      var(--color-main)
-    ),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--color-main)),
     url("../assets/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -216,7 +208,7 @@
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 .bottom_key_1 {
