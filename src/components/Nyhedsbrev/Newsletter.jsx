@@ -19,7 +19,7 @@ export function Newsletter() {
     // Save the previous page to return to after 3 seconds
     setPreviousPage(window.location.pathname);
 
-    // Hide the confirmation popup after 2,5 seconds and return to the previous page
+    // Hide the confirmation popup after 2.5 seconds and return to the previous page
     setTimeout(() => {
       setShowConfirmation(false);
       setPreviousPage(null);
@@ -46,19 +46,29 @@ export function Newsletter() {
             placeholder="Enter your email"
             required
           />
-          <button className={styles.button} type="submit">
-            Subscribe
+          <button className={styles.button}>
+            <p>Subscribe</p>
+            <svg
+              strokeWidth="4"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              ></path>
+            </svg>
           </button>
         </form>
       </div>
       {showConfirmation && (
         <div className={styles.confirmationPopup}>
           <div className={styles.popupContent}>
-            <img
-              className={styles.popupImage}
-              src="/confirmation.svg"
-              alt="Signed up"
-            />
+            <img className={styles.popupImage} src="/confirmation.svg" alt="Signed up" />
             <p>Thank you for signing up!</p>
             <p>You will receive our newsletter shortly.</p>
           </div>
