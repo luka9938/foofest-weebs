@@ -5,7 +5,7 @@ export default function Tickets() {
   return (
     <>
       <main>
-        <div className="hero">
+        <div className={`hero ${styles.hero}`}>
           <h1 className={styles.h1}>TICKETS</h1>
         </div>
         <div className={styles.ticket_container}>

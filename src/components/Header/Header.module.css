@@ -79,7 +79,6 @@
 }
 
 .nav_container .checkbox:hover ~ .hamburger_lines .line,
-.nav_container .hamburger_lines .line:hover,
 .nav_container input[type="checkbox"]:checked ~ .hamburger_lines .line {
   background-color: var(--color-headline);
 }
