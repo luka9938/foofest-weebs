@@ -155,3 +155,41 @@
 .learnMore:hover .buttonText {
   color: #fcf2c1;
 }
+
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 2rem;
+  }
+
+  .newsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .images {
+    height: auto;
+  }
+
+  .dato,
+  .description,
+  .h2,
+  .learnMore {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .learnMore:active .circle,
+  .learnMore:focus .circle {
+    width: 100%;
+  }
+
+  .learnMore:active .circle .icon.arrow,
+  .learnMore:focus .circle .icon.arrow {
+    background: #fcf2c1;
+    transform: translate(1rem, 0);
+  }
+
+  .learnMore:active .buttonText,
+  .learnMore:focus .buttonText {
+    color: #fcf2c1;
+  }
+}
