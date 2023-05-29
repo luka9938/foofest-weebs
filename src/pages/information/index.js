@@ -33,26 +33,45 @@ const PracticalPage = ({ google }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Practical Information - Your Festival Name</title>
-        <meta name="description" content="Practical information for Your Festival Name" />
+        <title>Practical Information - Boomer Fest</title>
+        <meta
+          name="description"
+          content="Practical information for Your Festival Name"
+        />
       </Head>
-
-      <h1 className={styles.title}>Practical Information</h1>
-      <div className={styles.information}>
-        <h2 className={styles.subtitle}>Important Details:</h2>
-        <ul className={styles["practical-list"]}>
-          <li className={`${styles["practical-item"]} ${isLocationOpen ? styles.open : ""}`} onClick={handleLocationClick}>
+      <div className={`hero ${styles.hero}`}>
+        <h1 className={styles.h1}>Information</h1>
+      </div>
+      <div className={styles.container}>
+        <div className={styles["practical-list"]}>
+          <div
+            className={`${styles["practical-item"]} ${
+              isLocationOpen ? styles.open : ""
+            }`}
+            onClick={handleLocationClick}
+          >
             <div className={styles.locationContainer}>
-              <span className={styles.locationText}>Location: Steffens lejlighed</span>
-              {isLocationOpen ? <button className={styles.hideButton}></button> : <button className={styles.showButton}>Show Map</button>}
+              <span className={styles.locationText}>
+                Where is Boomer Festival?
+              </span>
+              {isLocationOpen ? (
+                <button className={styles.button}>Hide Map</button>
+              ) : (
+                <button className={styles.button}>Show Map</button>
+              )}
             </div>
             {isLocationOpen && (
               <div className={styles.additionalInfo}>
                 Løvspringsvej 6a.
                 <div className={styles.mapContainer} onClick={handleMapClick}>
-                  <Map google={google} zoom={14} initialCenter={mapCenter} className={styles.map}>
+                  <Map
+                    google={google}
+                    zoom={14}
+                    initialCenter={mapCenter}
+                    className={styles.map}
+                  >
                     <Marker
                       position={{
                         lat: 55.76074970251176,
@@ -61,24 +80,60 @@ const PracticalPage = ({ google }) => {
                     />
                   </Map>
                 </div>
-                <div className={styles.buttonContainer}>
-                  {isLocationOpen ? <button className={`${styles.button} ${styles.hideButton}`}>Hide Map</button> : <button className={styles.button}>Show Map</button>}
-                </div>
               </div>
             )}
-          </li>
-
-          <li className={`${styles["practical-item"]} ${isDateOpen ? styles.open : ""}`} onClick={handleDateClick}>
-            Date: July 7th - 9th 2023 <span className={styles.plusSign}>+</span>
-            {isDateOpen && <div className={styles.additionalInfo}>Warm-up party July 6th at KEA.</div>}
-          </li>
-          <li className={`${styles["practical-item"]} ${isTimeOpen ? styles.open : ""}`} onClick={handleTimeClick}>
-            Time: 02PM - 02AM every day! <span className={styles.plusSign}>+</span>
-            {isTimeOpen && <div className={styles.additionalInfo}>Doors open at 02PM. Music starts at 03PM.</div>}
-          </li>
-        </ul>
+          </div>
+          <details>
+            <summary>Camping</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>Ticketinfo</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>Age</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>Entry and wristbands</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>Terms of purchase of a wristband</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>List of illegal items</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>Behavior at the festival</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+          <details>
+            <summary>Availability</summary>
+            <article className={styles.details_content}>
+              <p>Warm-up party July 6th at KEA.</p>
+            </article>
+          </details>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
