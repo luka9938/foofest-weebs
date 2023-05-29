@@ -1,13 +1,13 @@
 import Link from "next/link";
-import styles from "./frivillig.module.css";
+import styles from "./volunteer.module.css";
 
 export default function Frivillig() {
   return (
     <>
-      <h2 className={styles.subtitle}>Welcome to FooFest 2023!!!!!</h2>
+      <h1 className={styles.subtitle}>Welcome to FooFest 2023!!!!!</h1>
       <header className={styles.header}>
         <div className={styles.headertext}>
-          <h1>Kære frivillig</h1>
+          <h2>Dear Volunteer</h2>
           <p>
             Non utriuque solatium amet netus nobis cum metus securus fecerunt oppressus eu
             oportunitatis error est quae interpretes corporis - v tot ullo s Verius. Non utriuque
@@ -22,7 +22,7 @@ export default function Frivillig() {
         <div className={styles.headergraphics}></div>
       </header>
 
-      <div id="frivillig">
+      <div id="volunteer">
         <div className={styles.container}>
           <div className={styles.cardslist}>
             <Link href="/ticket-page" className={styles.card}>
