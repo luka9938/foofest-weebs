@@ -19,6 +19,7 @@
 .headertext h1 {
   font-size: 30px;
   margin-bottom: 10px;
+  color: var(--color-headline);
 }
 
 .headergraphics {
@@ -27,7 +28,7 @@
   min-width: 250px;
   min-height: 250px;
   border-radius: 20px;
-  background-image: url("/Horns.jpg");
+  background-image: url("/volunteer.jpg");
   background-size: cover;
   margin-bottom: 1rem;
   padding: 3rem;
