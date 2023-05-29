@@ -1,4 +1,4 @@
-#frivillig {
+#volunteer {
   padding: 30px 0;
 }
 
@@ -16,7 +16,7 @@
   min-width: 300px;
 }
 
-.headertext h1 {
+.headertext h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -27,7 +27,7 @@
   min-width: 250px;
   min-height: 250px;
   border-radius: 20px;
-  background-image: url("/Horns.jpg");
+  background-image: url("/volunteer.jpg");
   background-size: cover;
   margin-bottom: 1rem;
   padding: 3rem;
@@ -81,7 +81,7 @@
 }
 
 .cardslist div:hover {
-  background: rebeccapurple;
+  background: var(--color-headline);
   transform: translateY(-10px);
   color: #2a2326;
 }

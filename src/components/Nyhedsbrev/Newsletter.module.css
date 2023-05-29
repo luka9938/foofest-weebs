@@ -11,6 +11,10 @@
   align-items: start;
 }
 
+.label {
+  font-family: var(--font-headline);
+}
+
 .input {
   background-color: #fafafa;
   border: 1px solid #a9a9a9;
@@ -19,19 +23,74 @@
   height: 46px;
   padding: 10px;
   width: 100%;
+  font-family: var(--font-headline);
 }
 
 .button {
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border: 2px solid var(--color-headline);
-  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
 }
 
-.button:hover {
-  transition: 0.5s;
+.button {
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--color-text);
+  font-family: var(--font-headline);
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
   background: var(--color-headline);
-  color: black;
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.button p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Subscribe";
+  width: 0%;
+  inset: 0;
+  color: var(--color-headline);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.button:hover::after {
+  width: 100%;
+}
+
+.button:hover p::before {
+  width: 100%;
+}
+
+.button:hover svg {
+  transform: translateX(4px);
+  color: var(--color-headline);
+}
+
+.button svg {
+  color: var(--color-text);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
 }
 
 .h2 {
@@ -56,6 +115,7 @@
   text-align: center;
   color: #fff;
 }
+
 .popupImage {
   width: 200px;
   height: auto;

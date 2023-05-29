@@ -26,16 +26,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto, 1fr);
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 50px;
 }
 
 .newsArticle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 50px;
-  margin-right: 50px;
+  .newsArticle {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .readMore {
@@ -53,7 +52,7 @@
 
 .dato {
   margin: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 100px;
   width: 7rem;
 }
@@ -61,15 +60,22 @@
 .description {
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 20px;
 }
 
 .images {
-  width: 100%;
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
 }
 
 .h2 {
   font-size: 1.5rem;
   margin-left: 100px;
+  color: var(--color-headline);
 }
 
 .learnMore {
@@ -84,6 +90,7 @@
   padding: 0;
   font-size: inherit;
   font-family: inherit;
+  margin-bottom: 50px;
 }
 
 .learnMore {
@@ -99,7 +106,7 @@
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #ce5e4a;
   border-radius: 1.625rem;
 }
 
@@ -127,8 +134,8 @@
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
+  border-top: 0.125rem solid #fcf2c1;
+  border-right: 0.125rem solid #fcf2c1;
   transform: rotate(45deg);
 }
 
@@ -141,7 +148,8 @@
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #fcf2c1;
+  font-family: var(--font-headline);
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -153,10 +161,48 @@
 }
 
 .learnMore:hover .circle .icon.arrow {
-  background: #a09393;
+  background: #fcf2c1;
   transform: translate(1rem, 0);
 }
 
 .learnMore:hover .buttonText {
-  color: #fff;
+  color: #fcf2c1;
+}
+
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 2rem;
+  }
+
+  .newsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .images {
+    height: auto;
+  }
+
+  .dato,
+  .description,
+  .h2,
+  .learnMore {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .learnMore:active .circle,
+  .learnMore:focus .circle {
+    width: 100%;
+  }
+
+  .learnMore:active .circle .icon.arrow,
+  .learnMore:focus .circle .icon.arrow {
+    background: #fcf2c1;
+    transform: translate(1rem, 0);
+  }
+
+  .learnMore:active .buttonText,
+  .learnMore:focus .buttonText {
+    color: #fcf2c1;
+  }
 }

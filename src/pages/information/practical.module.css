@@ -1,24 +1,27 @@
 .container {
-  margin-top: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  margin: 0 2.5% 2.5% 2.5%;
+  gap: 10vw;
 }
 
-.title {
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
+.hero {
+  background-color: var(--color-main);
+  gap: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      var(--color-main)
+    ),
+    url("../../assets/band.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.subtitle {
-  color: #555;
-  font-size: 20px;
-  margin-bottom: 10px;
+.h1 {
+  font-size: 7.594rem;
+  line-height: 8rem;
+  font-weight: bold;
 }
 
 .practical-list {
@@ -28,10 +31,10 @@
 
 .practical-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
 
@@ -43,11 +46,10 @@
 
 .text {
   font-size: 16px;
-  color: #333;
+  color: #fcf2c1;
 }
 
 .open {
-  background-color: #f7f7f7;
   border-radius: 4px;
   padding: 10px;
   transition: all 0.3s ease;
@@ -57,7 +59,7 @@
   margin-top: 12px;
   margin-bottom: 14px;
   margin-left: 20px;
-  color: #666;
+  color: #fcf2c1;
   font-size: 14px;
 }
 
@@ -76,23 +78,23 @@
 
 .button {
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--color-headline);
+  color: #fcf2c1;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .showButton:hover,
 .button:hover {
-  background-color: #0069d9;
+  background-color: var(--color-main3);
 }
 
 .additionalInfo {
   margin-top: 10px;
-  color: #666;
+  color: #fcf2c1;
 }
 
 .buttonContainer {
@@ -111,11 +113,11 @@
 .showButton {
   margin-left: 10px;
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--color-headline);
+  color: #fcf2c1;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -129,7 +131,7 @@
   }
 
   .title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .subtitle {
@@ -159,18 +161,6 @@
   }
 }
 
-.plusSign {
-  margin-left: 10px;
-  font-size: 1.5rem;
-}
-
-.plusSign:hover,
-.practical-item:hover {
-  animation-name: plus;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes plus {
   0% {
     transform: scale(1);
@@ -178,4 +168,8 @@
   100% {
     transform: scale(1.02);
   }
+}
+
+.details_content {
+  width: 80vw;
 }
