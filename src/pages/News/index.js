@@ -1,181 +1,77 @@
 import styles from "./news.module.css";
 
 export default function Home() {
+  const articles = [
+    {
+      imgSrc: "/Pink_Floyd_-_all_members.jpg",
+      date: "Dato",
+      title: "Overskrift",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+    },
+    {
+      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      date: "15/05/2023",
+      title: "3 dead under koncet",
+      description: "3 people dead last nigth, when Black Sabbath played.",
+    },
+    {
+      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      date: "Dato",
+      title: "Overskrift",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+    },
+    {
+      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      date: "Dato",
+      title: "Overskrift",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+    },
+    {
+      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      date: "Dato",
+      title: "Overskrift",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+    },
+    {
+      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      date: "Dato",
+      title: "Overskrift",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+    },
+  ];
+
   return (
     <>
       <div className={`hero ${styles.hero}`}>
         <h1 className={styles.headline}>Seneste Nyheder</h1>
       </div>
       <section className={styles.newsContainer}>
-        <NewsArticles></NewsArticles>
+        {articles.map((article, index) => (
+          <Article key={index} data={article} />
+        ))}
       </section>
     </>
   );
 }
 
-function NewsArticles() {
+function Article({ data }) {
   return (
-    <>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="news 1"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 2"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 3"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 4"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 5"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 6"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 7"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-      <article className={styles.newsArticle}>
-        <img
-          className={styles.images}
-          src="/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg"
-          alt="News 8"
-        />
-        <h2 className={styles.h2}>Overskrift</h2>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac
-          tempus. Etiam accumsan massa nec scelerisque pharetra. Nunc dui urna, blandit sit amet
-          mollis eget, condimentum a purus. Nullam facilisis neque interdum tristique ultricies.
-        </p>
-        <p className={styles.dato}>Dato</p>
-        <button className={styles.learnMore}>
-          <span className={`${styles.circle}`}>
-            <span className={`${styles.icon} ${styles.arrow}`}></span>
-          </span>
-          <span className={styles.buttonText}>Read More</span>
-        </button>
-      </article>
-    </>
+    <article className={styles.newsArticle}>
+      <img className={styles.images} src={data.imgSrc} alt={`news ${data.title}`} />
+      <p className={styles.dato}>{data.date}</p>
+      <h2 className={styles.h2}>{data.title}</h2>
+      <p className={styles.description}>{data.description}</p>
+      <button className={styles.learnMore}>
+        <span className={`${styles.circle}`}>
+          <span className={`${styles.icon} ${styles.arrow}`}></span>
+        </span>
+        <span className={styles.buttonText}>Read More</span>
+      </button>
+    </article>
   );
 }

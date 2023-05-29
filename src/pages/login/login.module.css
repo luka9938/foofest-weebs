@@ -7,7 +7,6 @@
 }
 
 .signup {
-  color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: block;
@@ -25,8 +24,8 @@
   flex-direction: column;
   gap: 35px;
   border-radius: 15px;
-  background: #e3e3e3;
-  box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+  background: var(--color-headline);
+  box-shadow: 16px 16px 32px var(--color-main3), -16px -16px 32px var(--color-main3);
   border-radius: 8px;
 }
 
@@ -35,6 +34,7 @@
   position: relative;
   width: 250px;
   margin-bottom: 15px;
+  color: var(--color-text);
 }
 
 .inputBox input,
@@ -43,7 +43,7 @@
   padding: 10px;
   outline: none;
   border: none;
-  color: #000;
+  color: var(--color-text);
   font-size: 1em;
   background: transparent;
   border-left: 2px solid #000;
@@ -62,7 +62,7 @@
   padding: 10px;
   pointer-events: none;
   font-size: 12px;
-  color: #000;
+  color: var(--color-text);
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 3px;
@@ -76,7 +76,7 @@
   padding: 5px 10px;
   background: #000;
   letter-spacing: 0.2em;
-  color: #fff;
+  color: var(--color-text);
   border: 2px;
 }
 
@@ -87,7 +87,7 @@
   padding: 5px 10px;
   background: #000;
   letter-spacing: 0.2em;
-  color: #fff;
+  color: var(--color-text);
   border: 2px;
 }
 
@@ -116,7 +116,7 @@
 
 .enter:hover {
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: var(--color-text);
 }
 
 .toggle {
@@ -125,7 +125,7 @@
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: #000;
+  color: var(--color-text);
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 5px;
@@ -139,7 +139,7 @@
 .toggle:hover {
   background-color: rgb(0, 0, 0);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  color: var(--color-text);
   transform: translateY(-7px);
 }
 
@@ -152,10 +152,72 @@
   border: 2px solid #000;
   background-color: #000;
   cursor: pointer;
-  color: #fff;
+  color: var(--color-text);
   transition: 0.5s;
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
   padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 50px;
+  }
+
+  .signup {
+    font-size: large;
+    margin-top: 1em;
+  }
+
+  .card {
+    width: 250px;
+    min-height: 300px;
+  }
+
+  .inputBox,
+  .inputBox1 {
+    width: 200px;
+  }
+
+  .inputBox input,
+  .inputBox1 input {
+    font-size: 0.8em;
+  }
+
+  .inputBox span,
+  .inputBox1 span {
+    font-size: 10px;
+  }
+
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    transform: translateX(93px) translateY(-15px);
+    font-size: 0.7em;
+  }
+
+  .inputBox1 input:valid ~ span,
+  .inputBox1 input:focus ~ span {
+    transform: translateX(136px) translateY(-15px);
+    font-size: 0.7em;
+  }
+
+  .enter {
+    height: 35px;
+    width: 80px;
+    font-size: 8px;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+  }
+
+  .toggle {
+    padding: 1em 2em;
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+
+  .signupMessage {
+    font-size: 8px;
+    padding: 4px;
+  }
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./frivillig.module.css";
 
 export default function Frivillig() {
@@ -24,48 +25,60 @@ export default function Frivillig() {
       <div id="frivillig">
         <div className={styles.container}>
           <div className={styles.cardslist}>
-            <div>
-              <h3>My Tecket</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
-                magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
-              </p>
-            </div>
-            <div>
-              <h3>My Teams</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
-                magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
-              </p>
-            </div>
-            <div>
-              <h3>My Shift</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
-                magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
-              </p>
-            </div>
-            <div>
-              <h3>Shift Excuse</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
-                magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
-              </p>
-            </div>
-            <div>
-              <h3>News</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
-                magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
-              </p>
-            </div>
-            <div>
-              <h3>FQA</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
-                magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
-              </p>
-            </div>
+            <Link href="/ticket-page" className={styles.card}>
+              <div>
+                <h3>My Tecket</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
+                  magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
+                </p>
+              </div>
+            </Link>
+            <Link href="/teams-page" className={styles.card}>
+              <div>
+                <h3>My Teams</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
+                  magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
+                </p>
+              </div>
+            </Link>
+            <Link href="/shift-page" className={styles.card}>
+              <div>
+                <h3>My Shift</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
+                  magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
+                </p>
+              </div>
+            </Link>
+            <Link href="/excuse-page" className={styles.card}>
+              <div>
+                <h3>Shift Excuse</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
+                  magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
+                </p>
+              </div>
+            </Link>
+            <Link href="/news" className={styles.card}>
+              <div>
+                <h3>News</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
+                  magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
+                </p>
+              </div>
+            </Link>
+            <Link href="/information" className={styles.card}>
+              <div>
+                <h3>FQA</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie lacus id
+                  magna viverra laoreet. Aliquam id nunc ornare, tempus arcu ac, efficitur ligula.
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
