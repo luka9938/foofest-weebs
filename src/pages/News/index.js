@@ -10,34 +10,34 @@ export default function Home() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
     },
     {
-      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      imgSrc: "/Pink_Floyd_-_all_members.jpg",
       date: "15/05/2023",
       title: "3 dead under koncet",
       description: "3 people dead last nigth, when Black Sabbath played.",
     },
     {
-      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      imgSrc: "/Pink_Floyd_-_all_members.jpg",
       date: "Dato",
       title: "Overskrift",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
     },
     {
-      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      imgSrc: "/Pink_Floyd_-_all_members.jpg",
       date: "Dato",
       title: "Overskrift",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
     },
     {
-      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      imgSrc: "/Pink_Floyd_-_all_members.jpg",
       date: "Dato",
       title: "Overskrift",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
     },
     {
-      imgSrc: "/620px-Black_Sabbath_(Iommi,_Osbourne,_Ward_and_Butler).jpg",
+      imgSrc: "/Pink_Floyd_-_all_members.jpg",
       date: "Dato",
       title: "Overskrift",
       description:
