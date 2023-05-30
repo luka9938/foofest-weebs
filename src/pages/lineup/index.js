@@ -76,7 +76,7 @@ export default function Lineup() {
   return (
     <>
       <div className={`hero ${styles.hero}`}>
-        <h1 className={styles.h1}>LINEUP</h1>
+        <h1 className={styles.headline}>LINEUP</h1>
       </div>
       <div className={styles.container}>
         {bands.map((band) => (

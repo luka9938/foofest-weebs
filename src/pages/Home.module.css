@@ -92,7 +92,7 @@
   position: absolute;
   transform: translateY(-50%);
   transform-origin: center;
-  transition: background 0.3s linear, width 0.3s linear;
+  transition: 0.3s linear, width 0.3s linear;
 }
 
 .btn_text {
