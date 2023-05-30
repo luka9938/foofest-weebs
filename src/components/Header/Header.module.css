@@ -255,3 +255,21 @@
     margin: 0.01rem;
   }
 }
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 30%;
+    max-height: 30%;
+    top: -32px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 30%;
+    max-height: 30%;
+    top: -24px;
+    right: 16px;
+  }
+}
