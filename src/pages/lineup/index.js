@@ -18,7 +18,7 @@ export default function Lineup() {
         const images = {};
         data.forEach((band) => {
           bios[band.name] = band.bio;
-          images[band.name] = band.logo;
+          images[band.name] = band.logo.replaceAll(/[,\(\)]/g, "");
         });
 
         setBandBios(bios);
