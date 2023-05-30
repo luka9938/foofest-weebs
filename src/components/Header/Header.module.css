@@ -107,6 +107,8 @@
   flex-direction: column;
   transition: transform 0.5s ease-in-out;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .menu_items li {
@@ -125,13 +127,16 @@
   font-size: 1.2rem;
   color: var(--color-text);
 }
-.menu_logo {
+
+.menu_logo_link {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: auto;
-  color: var(--color-text);
-  text-decoration: none;
-  max-width: 50%;
+}
+
+.menu_logo {
+  margin: 0;
+  width: 50%;
 }
 
 .nav_container input[type="checkbox"]:checked ~ .menu_items {

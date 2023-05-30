@@ -41,7 +41,12 @@ export function Header({ data }) {
         </div>
         <div className={styles.menu_items}>
           <li>
-            <Link href="/" onClick={closeMenu} aria-label="Logo">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className={styles.menu_logo_link}
+              aria-label="Logo"
+            >
               <img className={styles.menu_logo} src="./logo.png" alt="Logo" />
             </Link>
           </li>
