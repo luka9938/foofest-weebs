@@ -59,7 +59,7 @@ export default function Frivillig() {
             </Link>
             <Link href="/excuse-page" className={styles.card}>
               <div>
-                <h3>Shift Excuse</h3>
+                <h3>Shift Exchange</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aliquam molestie lacus id magna viverra laoreet. Aliquam id
