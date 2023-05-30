@@ -41,7 +41,12 @@ export function Header({ data }) {
         </div>
         <div className={styles.menu_items}>
           <li>
-            <Link href="/" onClick={closeMenu} className={styles.menu_logo_link} aria-label="Logo">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className={styles.menu_logo_link}
+              aria-label="Logo"
+            >
               <img className={styles.menu_logo} src="./logo.png" alt="Logo" />
             </Link>
           </li>
@@ -61,7 +66,7 @@ export function Header({ data }) {
             </Link>
           </li>
           <li>
-            <Link href="/news" onClick={closeMenu} aria-label="News">
+            <Link href="/News" onClick={closeMenu} aria-label="News">
               NEWS
             </Link>
           </li>
@@ -99,7 +104,8 @@ export function Header({ data }) {
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
           <ul className={styles.ticker_item}>
-            {Array.isArray(data) && data.map((band) => <Bands key={band.name} name={band.name} />)}
+            {Array.isArray(data) &&
+              data.map((band) => <Bands key={band.name} name={band.name} />)}
           </ul>
         </div>
       </div>
