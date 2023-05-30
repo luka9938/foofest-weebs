@@ -71,3 +71,34 @@
 .button:active {
   background-color: #642e24;
 }
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 5.594rem;
+    line-height: 6rem;
+  }
+
+  .merchContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .headline {
+    font-size: 4.594rem;
+    line-height: 5rem;
+  }
+
+  .merchContainer {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .gridItem {
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 11px;
+  }
+}
