@@ -13,7 +13,7 @@
       rgba(0, 0, 0, 0.5),
       var(--color-main)
     ),
-    url("../../assets/band.jpg");
+    url("../../assets/band_bw.png");
   background-position: center;
   background-repeat: no-repeat;
 }
