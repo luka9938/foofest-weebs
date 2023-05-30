@@ -18,10 +18,10 @@ export default function Lineup() {
         const images = {};
         data.forEach((band) => {
           bios[band.name] = band.bio;
-          images[band.name] = band.logo.replaceAll(
-            /[,\(\)]/g,
-            ""
-          ); /* replaces "()"" and "," in the images*/
+          images[band.name] = {
+            url: band.logo.replaceAll(/[,\(\)]/g, ""),
+            credits: band.logoCredits || "",
+          };
         });
 
         setBandBios(bios);
@@ -76,6 +76,18 @@ export default function Lineup() {
     return "Unknown";
   };
 
+  const handleCardMouseEnter = (bandName) => {
+    const updatedBandImages = { ...bandImages };
+    updatedBandImages[bandName].isHovered = true;
+    setBandImages(updatedBandImages);
+  };
+
+  const handleCardMouseLeave = (bandName) => {
+    const updatedBandImages = { ...bandImages };
+    updatedBandImages[bandName].isHovered = false;
+    setBandImages(updatedBandImages);
+  };
+
   return (
     <>
       <div className={`hero ${styles.hero}`}>
@@ -83,14 +95,26 @@ export default function Lineup() {
       </div>
       <div className={styles.container}>
         {bands.map((band) => (
-          <div key={band.id} className={`${styles.card} ${styles.smallCard}`}>
+          <div
+            key={band.id}
+            className={`${styles.card} ${styles.smallCard}`}
+            onMouseEnter={() => handleCardMouseEnter(band.name)}
+            onMouseLeave={() => handleCardMouseLeave(band.name)}
+          >
             <div
               className={styles.cardimg}
               style={{
-                backgroundImage: `url(${bandImages[band.name]})`,
+                backgroundImage: `url(${bandImages[band.name]?.url})`,
                 backgroundSize: "cover",
               }}
-            ></div>
+            >
+              {bandImages[band.name]?.isHovered &&
+                bandImages[band.name]?.credits && ( // Show logo credits only on hover and when credits exist
+                  <p className={styles.logoCredits}>
+                    {bandImages[band.name].credits}
+                  </p>
+                )}
+            </div>
             <div className={styles.cardinfo}>
               <p className={styles.title} onClick={() => togglePopup(band)}>
                 {band.name}
