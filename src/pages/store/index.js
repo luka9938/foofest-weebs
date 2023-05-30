@@ -36,22 +36,27 @@ export default function MerchPage() {
   };
 
   return (
-    <div className={styles.merchContainer}>
-      {tshirts.map((tshirt) => (
-        <div key={tshirt.id} className={styles.gridItem}>
-          <Image
-            src={tshirt.image}
-            alt={tshirt.name}
-            width={300}
-            height={400}
-          />
-          <h3>{tshirt.name}</h3>
-          <p>{tshirt.price}</p>
-          <button className={styles.button} onClick={() => handleBuy(tshirt)}>
-            Buy
-          </button>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className={`hero ${styles.hero}`}>
+        <h1 className={styles.headline}>MERCHANDISE</h1>
+      </div>
+      <div className={styles.merchContainer}>
+        {tshirts.map((tshirt) => (
+          <div key={tshirt.id} className={styles.gridItem}>
+            <Image
+              src={tshirt.image}
+              alt={tshirt.name}
+              width={300}
+              height={400}
+            />
+            <h3>{tshirt.name}</h3>
+            <p>{tshirt.price}</p>
+            <button className={styles.button} onClick={() => handleBuy(tshirt)}>
+              Buy
+            </button>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
