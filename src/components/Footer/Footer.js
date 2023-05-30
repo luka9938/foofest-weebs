@@ -6,16 +6,16 @@ export function Footer() {
     <footer>
       <div className={styles.footer_container}>
         <Link href="/" aria-label="Privatpolitik">
-          Privatpolitik
+          Privacy Policy
         </Link>
         <Link href="/" aria-label="Cookiepolitik">
-          Cookiepolitik
+          Cookie Policy
         </Link>
         <Link href="/" aria-label="Bæredygtighed">
-          Bæredygtighed
+          Sustainability
         </Link>
         <Link href="/" aria-label="Monkepolitik">
-          Monkepolitik
+          Monke Policy
         </Link>
       </div>
       <div className={styles.so_me}>

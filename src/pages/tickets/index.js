@@ -12,34 +12,34 @@ export default function Tickets() {
           <article className={styles.article}>
             <h2 className={styles.h2}>Regular</h2>
             <ul className={styles.ul}>
-              <li>- Alle 3 dage på Foofest uden camping.</li>
+              <li>- Grants access to all three days of BOOM FEST</li>
               <li>
-                - Den essentielle pakke til <br />
-                "live hard cum fast"
+                - The essential package for <br />
+                BOOM FEST 2023
               </li>
             </ul>
             <h3 className={styles.h3}>799,-</h3>
             <Link className={styles.a} href="#">
-              KØB NU
+              BUY NOW
             </Link>
           </article>
           <article className={styles.article}>
             <h2 className={styles.h2}>VIP</h2>
             <ul className={styles.ul}>
               <li>
-                - Giver adgang til hele festivalpladsen og alle koncerterne samt
-                vores særlige R.I.P.-område.
+                - Provides access to the entire festival area and all the
+                concerts, including our special V.I.P. area
               </li>
               <li>
-                - Eksklusivt udvalg af alt fra lækker mad og cocktails til
-                eftertragtede specialøl
+                - Exclusive selection of everything from delicious food and
+                cocktails to craft beers
               </li>
-              <li>- Chillout-område</li>
-              <li>- Hemmelig merchandisebutik med en stærkt begrænset vare.</li>
+              <li>- Chillout-area</li>
+              <li>- Secret merch store with very limited merch</li>
             </ul>
             <h3 className={styles.h3}>1299,-</h3>
             <Link className={styles.a} href="#">
-              KØB NU
+              BUY NOW
             </Link>
           </article>
         </div>
