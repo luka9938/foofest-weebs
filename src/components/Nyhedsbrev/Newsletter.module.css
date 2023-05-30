@@ -1,8 +1,9 @@
 .container {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 30vh;
 }
 
 .form {
@@ -22,7 +23,7 @@
   color: #000;
   height: 46px;
   padding: 10px;
-  width: 100%;
+  width: 45vw;
   font-family: var(--font-headline);
 }
 
@@ -43,7 +44,6 @@
 }
 
 .button p {
-  margin: 0;
   position: relative;
   font-size: 20px;
   color: var(--color-text);
@@ -94,8 +94,9 @@
 }
 
 .h2 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 3.157rem;
+  margin: 0 0 5% 0;
+  font-weight: bold;
 }
 
 .confirmationPopup {
