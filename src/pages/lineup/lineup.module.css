@@ -7,7 +7,11 @@
 .hero {
   background-color: var(--color-main);
   gap: 1rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--color-main)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      var(--color-main)
+    ),
     url("../../assets/stage_bw.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -48,6 +52,17 @@
   text-align: center;
   z-index: -1;
   transition: opacity 0.3s ease-in-out;
+}
+.logoCredits {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 .cardimg {
