@@ -35,7 +35,7 @@ export default function Tickets() {
                 cocktails to craft beers
               </li>
               <li>- Chillout-area</li>
-              <li>- Secret merch store with vert limited merch</li>
+              <li>- Secret merch store with very limited merch</li>
             </ul>
             <h3 className={styles.h3}>1299,-</h3>
             <Link className={styles.a} href="#">

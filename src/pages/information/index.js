@@ -54,7 +54,7 @@ const PracticalPage = ({ google }) => {
           >
             <div className={styles.locationContainer}>
               <span className={styles.locationText}>
-                Where is Boomer Festival?
+                Where is Boom Fest 2023?
               </span>
               {isLocationOpen ? (
                 <button className={styles.button}>Hide Map</button>
