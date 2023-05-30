@@ -36,13 +36,13 @@ export function Header({ data }) {
         </div>
         <div className={styles.logo}>
           <Link href="/" aria-label="Logo">
-            LOGO
+            <img src="./logo.png" alt="Logo" />
           </Link>
         </div>
         <div className={styles.menu_items}>
           <li>
             <Link href="/" onClick={closeMenu} aria-label="Logo">
-              LOGO
+              <img className={styles.menu_logo} src="./logo.png" alt="Logo" />
             </Link>
           </li>
           <li>
@@ -99,7 +99,8 @@ export function Header({ data }) {
       <div className={styles.ticker_wrap}>
         <div className={styles.ticker}>
           <ul className={styles.ticker_item}>
-            {Array.isArray(data) && data.map((band) => <Bands key={band.name} name={band.name} />)}
+            {Array.isArray(data) &&
+              data.map((band) => <Bands key={band.name} name={band.name} />)}
           </ul>
         </div>
       </div>
