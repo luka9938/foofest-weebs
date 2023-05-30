@@ -33,7 +33,7 @@ export function Newsletter() {
   return (
     <>
       <div className={styles.container}>
-        <h2 className={styles.h2}>Subscribe to our Newsletter</h2>
+        <h1 className={styles.h2}>Stay Updated!</h1>
         <form className={styles.form} onSubmit={handleSubmit}>
           <label className={styles.label} htmlFor="news-email">
             Email
@@ -68,7 +68,11 @@ export function Newsletter() {
       {showConfirmation && (
         <div className={styles.confirmationPopup}>
           <div className={styles.popupContent}>
-            <img className={styles.popupImage} src="/confirmation.svg" alt="Signed up" />
+            <img
+              className={styles.popupImage}
+              src="/confirmation.svg"
+              alt="Signed up"
+            />
             <p>Thank you for signing up!</p>
             <p>You will receive our newsletter shortly.</p>
           </div>

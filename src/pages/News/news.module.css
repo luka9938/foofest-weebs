@@ -31,10 +31,9 @@
 }
 
 .newsArticle {
-  .newsArticle {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .readMore {
