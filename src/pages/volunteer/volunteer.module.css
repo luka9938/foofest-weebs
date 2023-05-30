@@ -90,8 +90,12 @@
   font-size: large;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .subtitle {
     font-size: 40px;
+  }
+
+  .headermoretext {
+    margin-bottom: 60px;
   }
 }
