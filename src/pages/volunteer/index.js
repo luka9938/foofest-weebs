@@ -37,7 +37,7 @@ export default function Frivillig() {
                 </p>
               </div>
             </Link>
-            <Link href="/teams-page" className={styles.card}>
+            <Link href="#" className={styles.card}>
               <div>
                 <h3>My Teams</h3>
                 <p>
@@ -47,7 +47,7 @@ export default function Frivillig() {
                 </p>
               </div>
             </Link>
-            <Link href="/shift-page" className={styles.card}>
+            <Link href="#" className={styles.card}>
               <div>
                 <h3>My Shift</h3>
                 <p>
@@ -57,7 +57,7 @@ export default function Frivillig() {
                 </p>
               </div>
             </Link>
-            <Link href="/excuse-page" className={styles.card}>
+            <Link href="#" className={styles.card}>
               <div>
                 <h3>Shift Exchange</h3>
                 <p>
