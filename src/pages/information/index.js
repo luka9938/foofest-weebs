@@ -86,49 +86,52 @@ const PracticalPage = ({ google }) => {
           <details>
             <summary>Camping</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>Something something camping...</p>
             </article>
           </details>
           <details>
-            <summary>Ticketinfo</summary>
+            <summary>Ticket info</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>Visit the ticket page</p>
             </article>
           </details>
           <details>
             <summary>Age</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>
+                You need to be at the age of 45 or older to attend Boom Fest
+                2023
+              </p>
             </article>
           </details>
           <details>
             <summary>Entry and wristbands</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p> Get your wristbands at KEA.</p>
             </article>
           </details>
           <details>
             <summary>Terms of purchase of a wristband</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>We have every right and intend to sue you</p>
             </article>
           </details>
           <details>
             <summary>List of illegal items</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>Yes</p>
             </article>
           </details>
           <details>
             <summary>Behavior at the festival</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>Be nice</p>
             </article>
           </details>
           <details>
             <summary>Availability</summary>
             <article className={styles.details_content}>
-              <p>Warm-up party July 6th at KEA.</p>
+              <p>Visit the ticket page</p>
             </article>
           </details>
         </div>
