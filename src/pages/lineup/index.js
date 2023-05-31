@@ -6,7 +6,7 @@ export default function Lineup() {
   const [bands, setBands] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [bandBios, setBandBios] = useState({});
-  const [bandImages, setBandImages] = useState({}); // State for storing band image URLs
+  const [bandImages, setBandImages] = useState({});
 
   useEffect(() => {
     fetch("https://sunrise-innovative-pediatrician.glitch.me/bands")
@@ -19,7 +19,10 @@ export default function Lineup() {
         data.forEach((band) => {
           bios[band.name] = band.bio;
           images[band.name] = {
-            url: band.logo.replaceAll(/[,\(\)]/g, ""),
+            url: band.logo.replaceAll(
+              /[,\(\)]/g,
+              ""
+            ) /* Replaces "," and "()" with ""*/,
             credits: band.logoCredits || "",
           };
         });
