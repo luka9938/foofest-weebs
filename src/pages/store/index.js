@@ -56,8 +56,13 @@ export default function MerchPage() {
             <h3>{tshirt.name}</h3>
             <p>{tshirt.brand}</p>
             <p>{tshirt.price}</p>
-            <button className={styles.button} onClick={() => handleBuy(tshirt)}>
-              BUY NOW
+            <button
+              className={styles.hero_btn}
+              onClick={() => handleBuy(tshirt)}
+            >
+              <span className={styles.btn_text}>Buy now</span>
+              <span className={styles.bottom_key_1}></span>
+              <span className={styles.bottom_key_2}></span>
             </button>
           </div>
         ))}

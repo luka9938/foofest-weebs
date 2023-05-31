@@ -17,7 +17,9 @@ export default function Home({ data }) {
       if (difference > 0) {
         timeLeft = {
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          hours: Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          ),
           minutes: Math.floor((difference / 1000 / 60) % 60),
           seconds: Math.floor((difference / 1000) % 60),
         };
@@ -48,7 +50,7 @@ export default function Home({ data }) {
         <h1 className={styles.h1}>BOOM FEST</h1>
         <h2 className={styles.h2}>CHARLOTTENLUND</h2>
         <div className={styles.btn_container}>
-          <Link className={styles.hero_btn} href="#">
+          <Link className={styles.hero_btn} href="./tickets">
             <span className={styles.btn_text}>Buy Tickets</span>
             <span className={styles.bottom_key_1}></span>
             <span className={styles.bottom_key_2}></span>
