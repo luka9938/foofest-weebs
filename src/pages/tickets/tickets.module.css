@@ -32,7 +32,7 @@
 
 .ticket_container {
   display: grid;
-  grid-template-columns: repeat(2, 30vw);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   margin: 0 10% 10% 10%;
   gap: 10vw;

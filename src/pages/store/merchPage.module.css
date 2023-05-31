@@ -20,9 +20,9 @@
 .merchContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  background-color: black;
-  padding: 20px;
+  justify-content: center;
+  margin: 0 10% 10% 10%;
+  gap: 10vw;
 }
 
 .gridItem {
