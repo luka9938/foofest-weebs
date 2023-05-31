@@ -3,23 +3,24 @@ import styles from "./news.module.css";
 export default function Home() {
   const articles = [
     {
-      imgSrc: "/Pink_Floyd_-_all_members.jpg",
-      date: "Dato",
-      title: "Overskrift",
+      imgSrc: "/a_perfect_square.png",
+      date: "07/07/2023",
+      title:
+        "A Perfect Circle Cancels Show as Square Stage Throws Band off Balance",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+        "'Our band is called A Perfect Circle... NOT A PERFECT SQUARE', says frontman Maynard James Keenan",
     },
     {
-      imgSrc: "/Pink_Floyd_-_all_members.jpg",
-      date: "15/05/2023",
-      title: "3 people dead at Black Sabbath show",
+      imgSrc: "/sabbath_coffin.png",
+      date: "07/07/2023",
+      title: "3 People Dead at Black Sabbath Show",
       description:
-        "3 people died last night, when Black Sabbath played. The incident happened after the band choose to play some of their newer songs",
+        "3 people died last night, when Black Sabbath played on the main stage. The incident happened when the band decided to play some of their newer songs",
     },
     {
-      imgSrc: "/Pink_Floyd_-_all_members.jpg",
-      date: "Dato",
-      title: "Kurt Cobain's hologram left the stage mid-show",
+      imgSrc: "/hologram_kurt.png",
+      date: "07/07/2023",
+      title: "Kurt Cobain's Hologram Leaves Stage Mid Show",
       description:
         "Kurt Cobain's hologram decided to leave the stage mid-show last night. The incident took place when several audience members kept begging for the hologram to play the smash hit 'Smells Like Teen Spirit.' Kurt Cobain's hologram hasn't commented on the incident yet.",
     },
