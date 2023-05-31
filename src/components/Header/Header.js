@@ -88,11 +88,6 @@ export function Header() {
               MERCH
             </Link>
           </li>
-          <li>
-            <Link href="/gallery" onClick={closeMenu} aria-label="Gallery">
-              GALLERY
-            </Link>
-          </li>
           <div className={styles.so_me}>
             <Link href="/" aria-label="Monkepolitik">
               Facebook
