@@ -74,7 +74,7 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/news" onClick={closeMenu} aria-label="News">
+            <Link href="/News" onClick={closeMenu} aria-label="News">
               NEWS
             </Link>
           </li>
