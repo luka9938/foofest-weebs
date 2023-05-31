@@ -51,11 +51,7 @@
   flex-wrap: wrap;
   background-color: var(--color-main);
   gap: 1rem;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      var(--color-main)
-    ),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--color-main)),
     url("../assets/guitar_bw.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -191,4 +187,56 @@
 .lineup_names li:nth-child(4),
 .lineup_names li:nth-child(5) {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 375px) {
+  .h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  .h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .btn_container {
+    width: clamp(100px, 375px);
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+
+  .lineup {
+    padding: 2vw;
+  }
+
+  .lineup_row {
+    margin-bottom: 5vh;
+  }
+
+  .lineup_names {
+    width: 70vw;
+  }
+
+  .lineup_names li {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .lineup_names li:nth-child(1),
+  .lineup_names li:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .lineup_names li:nth-child(3),
+  .lineup_names li:nth-child(4),
+  .lineup_names li:nth-child(5) {
+    font-size: 0.9rem;
+  }
 }

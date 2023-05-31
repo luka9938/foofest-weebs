@@ -37,15 +37,15 @@ export default function Home({ data }) {
       <div className={styles.hero}>
         <h2 className={styles.h2}>
           <span>{timeLeft.days}</span>
-          <span> Dage </span>
+          <span> Days </span>
           <span>{timeLeft.hours}</span>
-          <span> Timer </span>
+          <span> Hours </span>
           <span>{timeLeft.minutes}</span>
-          <span> Min </span>
+          <span> Mins </span>
           <span>{timeLeft.seconds}</span>
-          <span> Sek </span>
+          <span> Secs </span>
         </h2>
-        <h1 className={styles.h1}>FOOFEST</h1>
+        <h1 className={styles.h1}>BOOM FEST</h1>
         <h2 className={styles.h2}>CHARLOTTENLUND</h2>
         <div className={styles.btn_container}>
           <Link className={styles.hero_btn} href="#">
@@ -54,7 +54,7 @@ export default function Home({ data }) {
             <span className={styles.bottom_key_2}></span>
           </Link>
 
-          <Link className={styles.hero_btn} href="#">
+          <Link className={styles.hero_btn} href="./login">
             <span className={styles.btn_text}>VOLUNTEER</span>
             <span className={styles.bottom_key_1}></span>
             <span className={styles.bottom_key_2}></span>

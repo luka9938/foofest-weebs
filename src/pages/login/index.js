@@ -18,7 +18,7 @@ export default function Login() {
     if (!loginMode) {
       setSignupMessage("Signup successful!");
     } else {
-      window.location.href = "./frivillig";
+      window.location.href = "./volunteer";
     }
   };
 
