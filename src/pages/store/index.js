@@ -35,7 +35,6 @@ const tshirts = [
 
 export default function MerchPage() {
   const handleBuy = (tshirt) => {
-    // Implement the buy functionality for the selected t-shirt
     console.log(`Buy ${tshirt.name}`);
   };
 
