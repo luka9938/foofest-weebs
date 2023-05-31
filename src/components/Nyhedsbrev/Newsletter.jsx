@@ -36,7 +36,7 @@ export function Newsletter() {
         <h1 className={styles.h2}>Stay Updated!</h1>
         <form className={styles.form} onSubmit={handleSubmit}>
           <label className={styles.label} htmlFor="news-email">
-            Email
+            Email*
           </label>
           <input
             className={styles.input}
