@@ -19,7 +19,7 @@ const tshirts = [
   },
   {
     id: 3,
-    image: "/Foofest_white_and_red_skull.png",
+    image: "/skull.png",
     name: "FOOFEST 2023 - LIMITED SKULL",
     brand: "BOOM FEST",
     price: "999 ,-",
