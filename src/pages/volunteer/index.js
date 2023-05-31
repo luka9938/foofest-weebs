@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./volunteer.module.css";
 
-export default function Frivillig() {
+export default function volunteer() {
   return (
     <>
       <h1 className={styles.subtitle}>Welcome to BoomFest 2023!!!!!</h1>
