@@ -24,16 +24,3 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
-
-export async function getServerSideProps() {
-  const apiUrl = "https://sunrise-innovative-pediatrician.glitch.me/bands";
-
-  const res = await fetch(apiUrl);
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-}

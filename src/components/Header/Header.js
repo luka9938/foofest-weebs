@@ -3,11 +3,19 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Bands from "@/components/Bands";
 
-export function Header({ data }) {
+export function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    setMenuOpen(false);
+    const fetchData = async () => {
+      const apiUrl = "https://sunrise-innovative-pediatrician.glitch.me/bands";
+      const res = await fetch(apiUrl);
+      const data = await res.json();
+      setData(data);
+    };
+
+    fetchData();
   }, []);
 
   const toggleMenu = () => {
@@ -66,7 +74,7 @@ export function Header({ data }) {
             </Link>
           </li>
           <li>
-            <Link href="/News" onClick={closeMenu} aria-label="News">
+            <Link href="/news" onClick={closeMenu} aria-label="News">
               NEWS
             </Link>
           </li>
@@ -111,19 +119,6 @@ export function Header({ data }) {
       </div>
     </header>
   );
-}
-
-export async function getServerSideProps() {
-  const apiUrl = "https://sunrise-innovative-pediatrician.glitch.me/bands";
-
-  const res = await fetch(apiUrl);
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
 }
 
 export default Header;
