@@ -7,24 +7,28 @@ const tshirts = [
     id: 1,
     image: "/purple.png",
     name: "FOOFEST 2023 - PURPLE AND YELLOW",
+    brand: "BOOM FEST",
     price: "749 ,-",
   },
   {
     id: 2,
     image: "/Foofest_black_and_red.png",
     name: "FOOFEST 2023 - BLACK AND RED",
+    brand: "BOOM FEST",
     price: "749 ,-",
   },
   {
     id: 3,
     image: "/Foofest_white_and_red_skull.png",
     name: "FOOFEST 2023 - LIMITED SKULL",
+    brand: "BOOM FEST",
     price: "999 ,-",
   },
   {
     id: 4,
     image: "/Foofest_green_and_orange.png",
     name: "FOOFEST 2023 - GREEN AND ORANGE",
+    brand: "BOOM FEST",
     price: "749 ,-",
   },
 ];
@@ -50,6 +54,7 @@ export default function MerchPage() {
               height={400}
             />
             <h3>{tshirt.name}</h3>
+            <p>{tshirt.brand}</p>
             <p>{tshirt.price}</p>
             <button className={styles.button} onClick={() => handleBuy(tshirt)}>
               BUY NOW
