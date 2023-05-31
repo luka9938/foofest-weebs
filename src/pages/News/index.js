@@ -1,10 +1,10 @@
 import styles from "./news.module.css";
 
-export default function Home() {
+export default function news() {
   const articles = [
     {
       imgSrc: "/a_perfect_square.png",
-      date: "08/07/2023",
+      date: "07/07/2023",
       title:
         "A Perfect Circle Cancels Show as Square Stage Throws Band off Balance",
       description:
