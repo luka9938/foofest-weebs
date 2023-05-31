@@ -9,5 +9,17 @@
 }
 
 .img {
-  width: 20vw;
+  width: 15vw;
+}
+
+@media (max-width: 768px) {
+  .flexContainer {
+    min-height: 15vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .flexContainer {
+    min-height: 10vh;
+  }
 }
