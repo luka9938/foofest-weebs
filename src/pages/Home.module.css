@@ -51,7 +51,11 @@
   flex-wrap: wrap;
   background-color: var(--color-main);
   gap: 1rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--color-main)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      var(--color-main)
+    ),
     url("../assets/guitar_bw.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +193,7 @@
   font-size: 3rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .h1 {
     font-size: 4rem;
     line-height: 5rem;
@@ -221,22 +225,70 @@
   }
 
   .lineup_names {
-    width: 70vw;
+    width: 95vw;
   }
 
   .lineup_names li {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 4px;
+  }
+
+  .lineup_names li::before {
+    padding: 1rem;
   }
 
   .lineup_names li:nth-child(1),
   .lineup_names li:nth-child(2) {
-    font-size: 1rem;
+    font-size: 3rem;
   }
 
   .lineup_names li:nth-child(3),
   .lineup_names li:nth-child(4),
   .lineup_names li:nth-child(5) {
-    font-size: 0.9rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lineup_names li {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .lineup_names li::before {
+    padding: 1rem;
+  }
+
+  .lineup_names li:nth-child(1),
+  .lineup_names li:nth-child(2) {
+    font-size: 2.4rem;
+  }
+
+  .lineup_names li:nth-child(3),
+  .lineup_names li:nth-child(4),
+  .lineup_names li:nth-child(5) {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lineup_names li {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .lineup_names li::before {
+    padding: 0.5rem;
+  }
+
+  .lineup_names li:nth-child(1),
+  .lineup_names li:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  .lineup_names li:nth-child(3),
+  .lineup_names li:nth-child(4),
+  .lineup_names li:nth-child(5) {
+    font-size: 1.4rem;
   }
 }
