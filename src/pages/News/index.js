@@ -4,7 +4,7 @@ export default function Home() {
   const articles = [
     {
       imgSrc: "/a_perfect_square.png",
-      date: "07/07/2023",
+      date: "08/07/2023",
       title:
         "A Perfect Circle Cancels Show as Square Stage Throws Band off Balance",
       description:
@@ -12,10 +12,10 @@ export default function Home() {
     },
     {
       imgSrc: "/sabbath_coffin.png",
-      date: "07/07/2023",
+      date: "08/07/2023",
       title: "3 People Dead at Black Sabbath Show",
       description:
-        "3 people died last night, when Black Sabbath played on the main stage. The incident happened when the band decided to play some of their newer songs",
+        "3 people died last night when Black Sabbath played on the main stage. The incident happened when the band decided to play some of their newer songs",
     },
     {
       imgSrc: "/hologram_kurt.png",
@@ -25,18 +25,20 @@ export default function Home() {
         "Kurt Cobain's hologram decided to leave the stage mid-show last night. The incident took place when several audience members kept begging for the hologram to play the smash hit 'Smells Like Teen Spirit.' Kurt Cobain's hologram hasn't commented on the incident yet.",
     },
     {
-      imgSrc: "/Pink_Floyd_-_all_members.jpg",
-      date: "Dato",
-      title: "Overskrift",
+      imgSrc: "/lukas.jpg",
+      date: "07/07/2023",
+      title: "Boom Fest Takes a Stand in Support of Gay Rights",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+        "Boom Fest, the annual music and arts festival known for its celebration of diversity and inclusivity, has made a powerful statement by publicly supporting gay rights. In an official announcement, festival organizers expressed their commitment to fostering an environment of acceptance and equality for the LGBTQ+ community. The move has been met with widespread applause, highlighting the festival's dedication to promoting social progress and unity through music and art.",
     },
     {
-      imgSrc: "/Pink_Floyd_-_all_members.jpg",
-      date: "Dato",
-      title: "Overskrift",
+      imgSrc:
+        "/640px-Metallica_Live_at_The_O2_London_England_22_October_2017_cropped.jpg",
+      date: "06/07/2023",
+      title:
+        "Metallica's Lars Ulrich Files Lawsuit Against Boom Fest for Unauthorized Song Usag",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+        "Lars Ulrich, drummer of the legendary rock band Metallica, has taken legal action against Boom Fest for including one of their songs on the festival's playlist without permission. Ulrich alleges copyright infringement and seeks damages for the unauthorized usage of the song, emphasizing the importance of protecting artists' intellectual property rights in the music industry. The lawsuit has sparked a debate surrounding the balance between artistic freedom and copyright enforcement.",
     },
     {
       imgSrc: "/Pink_Floyd_-_all_members.jpg",
