@@ -6,7 +6,7 @@ export default function Tickets() {
     <>
       <main>
         <div className={`hero ${styles.hero}`}>
-          <h1 className={styles.h1}>TICKETS</h1>
+          <h1 className={styles.headline}>TICKETS</h1>
         </div>
         <div className={styles.ticket_container}>
           <article className={styles.article}>

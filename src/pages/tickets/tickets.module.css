@@ -1,4 +1,4 @@
-.h1 {
+.headline {
   font-size: 7.594rem;
   line-height: 8rem;
   font-weight: bold;
@@ -52,6 +52,8 @@
 .a {
   padding: 1rem 2rem;
   border: 2px solid var(--color-headline);
+  width: fill;
+  text-align: center;
 }
 
 .a:hover {
@@ -64,6 +66,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .headline {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

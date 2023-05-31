@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <>
       <div className={`hero ${styles.hero}`}>
-        <h1 className={styles.headline}>Latest News</h1>
+        <h1 className={styles.headline}>News</h1>
       </div>
       <section className={styles.newsContainer}>
         {articles.map((article, index) => (

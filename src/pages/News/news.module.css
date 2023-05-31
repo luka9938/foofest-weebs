@@ -168,9 +168,17 @@
   color: #fcf2c1;
 }
 
+@media screen and (max-width: 1024px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 2.2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .headline {
     font-size: 2rem;
+    line-height: 2.2rem;
   }
 
   .newsContainer {

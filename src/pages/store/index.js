@@ -52,7 +52,7 @@ export default function MerchPage() {
             <h3>{tshirt.name}</h3>
             <p>{tshirt.price}</p>
             <button className={styles.button} onClick={() => handleBuy(tshirt)}>
-              Buy
+              BUY NOW
             </button>
           </div>
         ))}

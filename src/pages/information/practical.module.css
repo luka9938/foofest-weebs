@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
 }
 
-.h1 {
+.headline {
   font-size: 7.594rem;
   line-height: 8rem;
   font-weight: bold;
@@ -125,6 +125,14 @@
 .hideButton {
   margin-left: 10px;
 }
+
+@media (max-width: 1024px) {
+  .headline {
+    font-size: 4rem;
+    line-height: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;

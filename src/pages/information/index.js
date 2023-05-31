@@ -42,7 +42,7 @@ const PracticalPage = ({ google }) => {
         />
       </Head>
       <div className={`hero ${styles.hero}`}>
-        <h1 className={styles.h1}>Information</h1>
+        <h1 className={styles.headline}>Information</h1>
       </div>
       <div className={styles.container}>
         <div className={styles["practical-list"]}>
