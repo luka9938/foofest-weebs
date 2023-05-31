@@ -1,12 +1,11 @@
 import styles from "./news.module.css";
 
-export default function Home() {
+export default function news() {
   const articles = [
     {
       imgSrc: "/a_perfect_square.png",
       date: "07/07/2023",
-      title:
-        "A Perfect Circle Cancels Show as Square Stage Throws Band off Balance",
+      title: "A Perfect Circle Cancels Show as Square Stage Throws Band off Balance",
       description:
         "'Our band is called A Perfect Circle... NOT A PERFECT SQUARE', says frontman Maynard James Keenan",
     },
@@ -64,11 +63,7 @@ export default function Home() {
 function Article({ data }) {
   return (
     <article className={styles.newsArticle}>
-      <img
-        className={styles.images}
-        src={data.imgSrc}
-        alt={`news ${data.title}`}
-      />
+      <img className={styles.images} src={data.imgSrc} alt={`news ${data.title}`} />
       <p className={styles.dato}>{data.date}</p>
       <h2 className={styles.h2}>{data.title}</h2>
       <p className={styles.description}>{data.description}</p>
