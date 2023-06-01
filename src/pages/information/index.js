@@ -5,8 +5,6 @@ import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 
 const PracticalPage = ({ google }) => {
   const [isLocationOpen, setLocationOpen] = useState(false);
-  const [isDateOpen, setDateOpen] = useState(false);
-  const [isTimeOpen, setTimeOpen] = useState(false);
   const [mapCenter, setMapCenter] = useState({ lat: 0, lng: 0 });
 
   useEffect(() => {
@@ -22,14 +20,6 @@ const PracticalPage = ({ google }) => {
 
   const handleMapClick = (event) => {
     event.stopPropagation();
-  };
-
-  const handleDateClick = () => {
-    setDateOpen(!isDateOpen);
-  };
-
-  const handleTimeClick = () => {
-    setTimeOpen(!isTimeOpen);
   };
 
   return (
