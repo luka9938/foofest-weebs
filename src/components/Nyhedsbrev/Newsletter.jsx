@@ -15,7 +15,7 @@ export function Newsletter() {
     // Show the confirmation popup
     setShowConfirmation(true);
 
-    // Hide the confirmation popup after 2.5 seconds and return to the previous page
+    // Hide the confirmation popup after 2.5 seconds
     setTimeout(() => {
       setShowConfirmation(false);
     }, 2500);

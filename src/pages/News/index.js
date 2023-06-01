@@ -36,16 +36,17 @@ export default function news() {
         "/640px-Metallica_Live_at_The_O2_London_England_22_October_2017_cropped.jpg",
       date: "06/07/2023",
       title:
-        "Metallica's Lars Ulrich Files Lawsuit Against Boom Fest for Unauthorized Song Usag",
+        "Metallica's Lars Ulrich Files Lawsuit Against Boom Fest for Unauthorized Song Usage",
       description:
         "Lars Ulrich, drummer of the legendary rock band Metallica, has taken legal action against Boom Fest for including one of their songs on the festival's playlist without permission. Ulrich alleges copyright infringement and seeks damages for the unauthorized usage of the song, emphasizing the importance of protecting artists' intellectual property rights in the music industry. The lawsuit has sparked a debate surrounding the balance between artistic freedom and copyright enforcement.",
     },
     {
-      imgSrc: "/Pink_Floyd_-_all_members.jpg",
-      date: "Dato",
-      title: "Overskrift",
+      imgSrc: "/720px-The_Fabs.JPG",
+      date: "06/07/2023",
+      title:
+        "Paul McCartney Cancels Beatles Show at Boom Fest Over Ethical Concerns of Digging Up John Lennon's Body",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus non nisl ac tempus...",
+        "In a surprising twist, Paul McCartney has pulled the plug on The Beatles' much-anticipated gig at Boom Fest. The reason? McCartney couldn't stomach the idea of digging up John Lennon's remains, considering it a major breach of ethics. Fans are understandably disappointed, as they were eagerly awaiting the performance",
     },
   ];
 
