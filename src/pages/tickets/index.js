@@ -19,7 +19,10 @@ export default function Tickets() {
               </li>
             </ul>
             <h3 className={styles.h3}>799,-</h3>
-            <Link className={styles.hero_btn} href="./tickets">
+            <Link
+              className={styles.hero_btn}
+              href="https://foofest-booking.vercel.app/"
+            >
               <span className={styles.btn_text}>Buy now</span>
               <span className={styles.bottom_key_1}></span>
               <span className={styles.bottom_key_2}></span>
@@ -40,7 +43,10 @@ export default function Tickets() {
               <li>- Secret merch store with very limited merch</li>
             </ul>
             <h3 className={styles.h3}>1299,-</h3>
-            <Link className={styles.hero_btn} href="./tickets">
+            <Link
+              className={styles.hero_btn}
+              href="https://foofest-booking.vercel.app/"
+            >
               <span className={styles.btn_text}>Buy now</span>
               <span className={styles.bottom_key_1}></span>
               <span className={styles.bottom_key_2}></span>
