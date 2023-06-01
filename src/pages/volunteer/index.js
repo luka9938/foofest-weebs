@@ -5,10 +5,10 @@ export default function volunteer() {
   return (
     <>
       <h1 className={styles.subtitle}>Welcome to BoomFest 2023!!!!!</h1>
-      <header className={styles.header}>
-        <div className={styles.headertext}>
+      <div className={styles.volunteer}>
+        <div className={styles.volunteertext}>
           <h2>Dear Volunteer</h2>
-          <p className={styles.headermoretext}>
+          <p className={styles.volunteermoretext}>
             Non utriuque solatium amet netus nobis cum metus securus fecerunt oppressus eu
             oportunitatis error est quae interpretes corporis - v tot ullo s Verius. Non utriuque
             solatium amet netus nobis cum metus securus fecerunt oppressus eu oportunitatis error
@@ -19,8 +19,8 @@ export default function volunteer() {
             Verius.
           </p>
         </div>
-        <div className={styles.headergraphics}></div>
-      </header>
+        <div className={styles.volunteergraphics}></div>
+      </div>
 
       <div id="volunteer">
         <div className={styles.container}>
