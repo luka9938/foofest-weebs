@@ -19,10 +19,7 @@ export default function Lineup() {
         data.forEach((band) => {
           bios[band.name] = band.bio;
           images[band.name] = {
-            url: band.logo.replaceAll(
-              /[,\(\)]/g,
-              ""
-            ) /* Replaces "," and "()" with ""*/,
+            url: band.logo.replaceAll(/[,\(\)]/g, ""),
             credits: band.logoCredits || "",
           };
         });
@@ -111,12 +108,9 @@ export default function Lineup() {
                 backgroundSize: "cover",
               }}
             >
-              {bandImages[band.name]?.isHovered &&
-                bandImages[band.name]?.credits && ( // Show logo credits only on hover and when credits exist
-                  <p className={styles.logoCredits}>
-                    {bandImages[band.name].credits}
-                  </p>
-                )}
+              {bandImages[band.name]?.isHovered && bandImages[band.name]?.credits && (
+                <p className={styles.logoCredits}>{bandImages[band.name].credits}</p>
+              )}
             </div>
             <div className={styles.cardinfo}>
               <p className={styles.title} onClick={() => togglePopup(band)}>
@@ -156,18 +150,14 @@ export default function Lineup() {
                 </div>
                 <div className={styles.flex}>
                   <h3 className={styles.popupsubtitle}>End Time:</h3>
-                  <p className={styles.popupdescription}>
-                    {getBandSchedule(showPopup.name)?.end}
-                  </p>
+                  <p className={styles.popupdescription}>{getBandSchedule(showPopup.name)?.end}</p>
                 </div>
               </div>
               <div className={styles.item2}>
                 <h2 className={styles.popuptitle}>{showPopup.name}</h2>
               </div>
               <div className={styles.item3}>
-                <p className={styles.popupdescription}>
-                  {bandBios[showPopup.name]}
-                </p>
+                <p className={styles.popupdescription}>{bandBios[showPopup.name]}</p>
               </div>
             </div>
           </>
