@@ -2,7 +2,7 @@
   padding: 30px 0;
 }
 
-.header {
+.volunteer {
   display: flex;
   min-height: 80vh;
   padding: 5rem;
@@ -11,17 +11,17 @@
   flex-wrap: wrap;
 }
 
-.headertext {
+.volunteertext {
   width: 30vw;
   min-width: 300px;
 }
 
-.headertext h2 {
+.volunteertext h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-.headergraphics {
+.volunteergraphics {
   width: 40vw;
   height: 40vw;
   min-width: 250px;
@@ -33,7 +33,7 @@
   padding: 3rem;
 }
 
-.headergraphics object {
+.volunteergraphics object {
   width: 100%;
   height: 100%;
 }
@@ -95,7 +95,7 @@
     font-size: 40px;
   }
 
-  .headermoretext {
+  .volunteermoretext {
     margin-bottom: 60px;
   }
 }
