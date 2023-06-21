@@ -36,7 +36,7 @@ export default function Login() {
         setSignupMessage("Signup successful!");
       }
     } else {
-      const { error } = await await supabase.auth.signInWithPassword({
+      const { error } = await supabase.auth.signInWithPassword({
         email: formDataObject.email,
         password: formDataObject.password,
       });
