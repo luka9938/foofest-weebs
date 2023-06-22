@@ -23,6 +23,9 @@ export default function Home({ data }) {
           minutes: Math.floor((difference / 1000 / 60) % 60),
           seconds: Math.floor((difference / 1000) % 60),
         };
+      } else {
+        clearInterval(timer);
+        timeLeft = null;
       }
       return timeLeft;
     };
@@ -37,16 +40,20 @@ export default function Home({ data }) {
   return (
     <main>
       <div className={styles.hero}>
-        <h2 className={styles.h2}>
-          <span>{timeLeft.days}</span>
-          <span> Days </span>
-          <span>{timeLeft.hours}</span>
-          <span> Hours </span>
-          <span>{timeLeft.minutes}</span>
-          <span> Mins </span>
-          <span>{timeLeft.seconds}</span>
-          <span> Secs </span>
-        </h2>
+        {timeLeft ? (
+          <h2 className={styles.h2}>
+            <span>{timeLeft.days}</span>
+            <span> Days </span>
+            <span>{timeLeft.hours}</span>
+            <span> Hours </span>
+            <span>{timeLeft.minutes}</span>
+            <span> Mins </span>
+            <span>{timeLeft.seconds}</span>
+            <span> Secs </span>
+          </h2>
+        ) : (
+          <h2 className={styles.h2}>BOOM FEST HAS STARTED</h2>
+        )}
         <h1 className={styles.h1}>BOOM FEST</h1>
         <h2 className={styles.h2}>CHARLOTTENLUND</h2>
         <div className={styles.btn_container}>
